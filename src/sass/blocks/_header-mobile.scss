@@ -1,0 +1,62 @@
+.header-mobile {
+    background-color: $white;
+    box-shadow: $shadow;
+    border-radius: 0 0 $radius $radius;
+    padding: 15px 0;
+    position: sticky;
+    z-index: 9999;
+    top: -50px;
+    display: none;
+    &-top {
+        margin-bottom: 12px;
+    }
+
+    &-logo {
+        height: 30px;
+
+        img {
+            height: 100%;
+        }
+    }
+
+    &-btns {
+        gap: 8px;
+        align-items: center;
+    }
+
+    &-btn {
+        width: 35px;
+        height: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+
+    &-search {
+        position: relative;
+
+        input {
+            width: 100%;
+            background-color: $grey;
+            font-size: 14px;
+            border: unset;
+            border-radius: $radius;
+            height: 35px;
+            padding-left: 36px;
+        }
+
+        svg {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 12px;
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .header-mobile {
+        display: block;
+    }
+}

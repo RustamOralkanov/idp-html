@@ -1,0 +1,118 @@
+.banners {
+    &-categories {
+        background-color: $white;
+        border-radius: $radius;
+        height: 500px;
+        padding: 24px 24px 48px;
+        position: relative;
+
+        &-wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+            overflow: auto;
+            height: 100%;
+            padding-bottom: 24px;
+        }
+    }
+
+    &-category {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+        color: $black;
+        transition: $transition;
+        font-size: 16px;
+        font-weight: 400;
+
+        svg,
+        img {
+            width: 24px;
+            height: 24px;
+        }
+
+        &:hover {
+            color: $green;
+
+            svg {
+                path {
+                    fill: $green;
+                }
+            }
+        }
+
+        &:last-child {
+            font-weight: 600;
+            color: $green;
+            position: absolute;
+            bottom: 16px;
+            background-color: $white;
+            padding-top: 18px;
+            padding-left: 24px;
+            width: 100%;
+            left: 0;
+            border-top: 1px solid $grey;
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .banners {
+        &-categories {
+            height: fit-content;
+            padding: 16px 8px;
+
+            ::-webkit-scrollbar {
+                width: 3px;
+            }
+
+            /* Track */
+            ::-webkit-scrollbar-track {
+                box-shadow: unset;
+                border-radius: 0;
+            }
+
+            /* Handle */
+            ::-webkit-scrollbar-thumb {
+                background: $grey;
+                border-radius: 20px;
+            }
+
+            /* Handle on hover */
+            ::-webkit-scrollbar-thumb:hover {
+                background: $grey;
+            }
+
+            &-wrapper {
+                flex-direction: row;
+                padding-bottom: 0px;
+            }
+        }
+
+        &-category {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
+            font-size: 10px;
+            font-weight: 400;
+            text-align: center;
+
+            &:last-child {
+                padding: 0;
+                width: unset;
+                position: unset;
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .banners {
+        &-categories {
+            &-wrapper {
+                gap: 10px;
+            }
+        }
+    }
+}

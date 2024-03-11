@@ -1,0 +1,27 @@
+.breadcrumbs {
+    padding: 16px 0 30px;
+    margin-bottom: 0;
+
+    .router-link-active,
+    span {
+        color: $dark-grey;
+        font-size: 12px;
+        font-weight: 400;
+    }
+
+    .router-link-exact-active {
+        font-weight: 700;
+        color: $black;
+    }
+}
+
+@media (max-width: 991px) {
+    .breadcrumbs {
+        padding: 16px 0;
+
+        .router-link-active,
+        span {
+            font-size: 10px;
+        }
+    }
+}

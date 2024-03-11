@@ -27,8 +27,27 @@
     }
 }
 
+.idp-btn {
+    border-radius: $radius;
+    background: unset;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid $grey;
+    cursor: pointer;
+    transition: $transition;
+
+    &:hover {
+        background-color: $yellow;
+        color: $white !important;
+        border-color: $yellow !important;
+    }
+}
+
 .mt-90 {
-    margin-top: 90px;
+    margin-top: 90px !important;
 }
 
 .input-style {

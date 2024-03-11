@@ -1,0 +1,298 @@
+.category-sort {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+
+    &-item {
+        position: relative;
+        background-color: $white;
+        border-radius: $radius;
+        padding: 5px 16px;
+        font-size: 16px;
+
+        .dropdown-menu {
+            border: unset;
+            box-shadow: $shadow;
+
+            &.show {
+                transform: unset !important;
+                width: 100%;
+                top: 34px !important;
+                z-index: 9 !important;
+            }
+        }
+
+        &-select {
+            color: $red;
+            font-size: 16px;
+            font-weight: 700;
+            transition: $transition;
+
+            &:focus {
+                color: $yellow !important;
+            }
+        }
+    }
+}
+
+.filter {
+    padding: 16px;
+    background-color: $white;
+    border-radius: $radius;
+    border: unset;
+
+    &-top {
+        display: none;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 30px;
+
+        &-title {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 0;
+            text-transform: uppercase;
+            color: $green;
+        }
+
+        &-btn {
+            background-color: $grey;
+            width: 35px;
+            height: 35px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: unset;
+            border-radius: $radius;
+            cursor: pointer;
+
+            svg {
+                flex: 0 0 auto
+            }
+        }
+    }
+}
+
+@media (max-width: 1199px) {
+    .filter {
+        border-radius: 0;
+
+        &-wrapper {
+            padding: 112px 0 80px;
+        }
+
+        &-top {
+            display: flex;
+        }
+    }
+}
+
+.filter-item {
+    border-bottom: 1px solid $dark-grey;
+
+    .chevron {
+        transform: rotate(180deg);
+        transition: $transition;
+    }
+
+    &-title {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 12px 0;
+        color: $black;
+        font-size: 18px;
+        font-weight: 700;
+
+        &[aria-expanded='true'] {
+
+
+            .chevron {
+                transform: rotate(0deg);
+            }
+        }
+    }
+
+    &-body {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin: 16px 0 24px;
+        height: 200px;
+        overflow: auto;
+
+        .input-group {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            position: relative;
+
+            input {
+                width: 24px;
+                height: 24px;
+                border-radius: 0;
+                opacity: 0;
+
+                &:checked+label::after {
+                    background-color: $green;
+                    background-image: url('../../icons/check.svg');
+                    background-size: 18px;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                }
+            }
+
+            label {
+                color: $black;
+                font-size: 16px;
+                font-weight: 400;
+
+                &:after {
+                    content: '';
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    left: 0;
+                    display: block;
+                    width: 24px;
+                    height: 24px;
+                    border: 1px solid $black;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .filter-item {
+        border-bottom: 1px solid $dark-grey;
+
+        .chevron {
+            width: 16px;
+            height: 16px;
+        }
+
+        &-title {
+            font-size: 16px;
+            padding: 10px 8px;
+        }
+
+        &-body {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin: 16px 0 24px;
+            padding: 0 8px;
+            height: 200px;
+            overflow: auto;
+
+            .input-group {
+
+                label {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+.category {
+    &-product {
+        &-count {
+            margin: 16px 0;
+        }
+    }
+
+    &-top {
+        position: relative;
+    }
+
+    &-mobile {
+        &-actions {
+            display: none;
+            gap: 5px;
+            align-items: center;
+        }
+    }
+}
+
+.sort-icon {
+    width: 30px;
+    height: 30px;
+    background-color: green;
+    border-radius: $radius;
+    border: unset;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+@media (max-width: 1199px) {
+    .category {
+        &-product {
+            &-count {
+                margin: 8px 0;
+                font-size: 12px;
+            }
+        }
+
+        &-mobile {
+            &-actions {
+                display: flex;
+                position: absolute;
+                right: 0;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+    }
+
+    .mobile-filter {
+        position: fixed;
+        z-index: 10;
+        max-width: 450px;
+        height: 100vh;
+        overflow: auto;
+        top: 0;
+        left: -1000px;
+        width: 100%;
+        transition: $transition;
+
+        &.active {
+            left: 0;
+        }
+    }
+}
+
+.category-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+
+    .card {
+        width: calc(25% - 15px) !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .category-container {
+        gap: 10px;
+
+        .card {
+            width: calc(33% - 6px) !important;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .category-container {
+        gap: 10px;
+
+        .card {
+            width: 100% !important;
+        }
+    }
+}

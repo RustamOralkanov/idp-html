@@ -1049,1283 +1049,514 @@
     </nav>
 
     <main>
-      <section class="category">
+      <section class="categories">
         <div class="container">
           <ul class="breadcrumbs">
             <li class="breadcrumb">
-              <router-link to="/">Главная</router-link>
+              <a href="/" class="router-link-active">Главная</a>
             </li>
             <li class="breadcrumb">
-              <router-link to="/categories">Категорий</router-link>
+              <a
+                href="/categories"
+                aria-current="page"
+                class="router-link-exact-active router-link-active"
+                >Категорий</a
+              >
             </li>
-            <li class="breadcrumb active">Smartphones</li>
           </ul>
-
-          <div class="row">
-            <div class="col-xxl-3 col-xl-3 col-lg-12">
-              <aside class="filter mobile-filter">
-                <div class="filter-wrapper">
-                  <div class="filter-top">
-                    <h3 class="filter-top-title">Все фильтры</h3>
-                    <button class="filter-top-btn">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                      >
-                        <path
-                          d="M19.7188 18.3906L13.325 12.0004L19.7188 5.65714C20.0392 5.28603 20.0219 4.72911 19.679 4.37894C19.3361 4.02878 18.7832 4.00341 18.4101 4.32073L11.9976 10.6169L5.69734 4.27367C5.33275 3.90878 4.74392 3.90878 4.37933 4.27367C4.20236 4.45039 4.10282 4.69094 4.10282 4.94188C4.10282 5.19282 4.20236 5.43337 4.37933 5.61008L10.6703 11.9439L4.2765 18.2777C4.09954 18.4544 4 18.695 4 18.9459C4 19.1969 4.09954 19.4374 4.2765 19.6141C4.45291 19.7903 4.69172 19.8885 4.94018 19.887C5.18409 19.8885 5.41891 19.794 5.59452 19.6235L11.9976 13.2709L18.4101 19.7271C18.5865 19.9032 18.8253 20.0014 19.0738 20C19.319 19.9989 19.554 19.9009 19.7281 19.7271C19.9039 19.5491 20.0017 19.3078 20 19.0569C19.9982 18.8059 19.897 18.5661 19.7188 18.3906Z"
-                          fill="#7F7F7F"
-                        ></path>
-                      </svg>
-                    </button>
-                  </div>
-                  <div class="filter-item">
-                    <div
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapseExample-0"
-                      aria-expanded="false"
-                      aria-controls="collapseExample"
-                      class="filter-item-title collapsed"
-                    >
-                      Цена
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        class="chevron"
-                      >
-                        <path
-                          d="M12.0002 7.25C12.1992 7.24906 12.3903 7.32836 12.5302 7.47L20.5302 15.47C20.8055 15.7655 20.7974 16.226 20.5118 16.5116C20.2262 16.7972 19.7657 16.8054 19.4702 16.53L12.0002 9.06L4.53015 16.53C4.23464 16.8054 3.77414 16.7972 3.48853 16.5116C3.20292 16.226 3.1948 15.7655 3.47015 15.47L11.4702 7.47C11.61 7.32836 11.8011 7.24906 12.0002 7.25Z"
-                          fill="black"
-                        ></path>
-                      </svg>
-                    </div>
-                    <div id="collapseExample-0" class="collapse" style="">
-                      <div class="filter-item-body">
-                        <div class="input-group">
-                          <input
-                            type="checkbox"
-                            name="price-0-0"
-                            id="price-0-0"
-                          /><label for="price-0-0">от 3000 до 9000 ₸ </label>
-                        </div>
-                        <div class="input-group">
-                          <input
-                            type="checkbox"
-                            name="price-1-0"
-                            id="price-1-0"
-                          /><label for="price-1-0">от 3000 до 9000 ₸ </label>
-                        </div>
-                        <div class="input-group">
-                          <input
-                            type="checkbox"
-                            name="price-2-0"
-                            id="price-2-0"
-                          /><label for="price-2-0">от 3000 до 9000 ₸ </label>
-                        </div>
-                        <div class="input-group">
-                          <input
-                            type="checkbox"
-                            name="price-3-0"
-                            id="price-3-0"
-                          /><label for="price-3-0">от 3000 до 9000 ₸ </label>
-                        </div>
-                        <div class="input-group">
-                          <input
-                            type="checkbox"
-                            name="price-4-0"
-                            id="price-4-0"
-                          /><label for="price-4-0">от 3000 до 9000 ₸ </label>
-                        </div>
-                        <div class="input-group">
-                          <input
-                            type="checkbox"
-                            name="price-5-0"
-                            id="price-5-0"
-                          /><label for="price-5-0">от 3000 до 9000 ₸ </label>
-                        </div>
-                        <div class="input-group">
-                          <input
-                            type="checkbox"
-                            name="price-6-0"
-                            id="price-6-0"
-                          /><label for="price-6-0">от 3000 до 9000 ₸ </label>
-                        </div>
-                        <div class="input-group">
-                          <input
-                            type="checkbox"
-                            name="price-7-0"
-                            id="price-7-0"
-                          /><label for="price-7-0">от 3000 до 9000 ₸ </label>
-                        </div>
-                        <div class="input-group">
-                          <input
-                            type="checkbox"
-                            name="price-8-0"
-                            id="price-8-0"
-                          /><label for="price-8-0">от 3000 до 9000 ₸ </label>
-                        </div>
-                        <div class="input-group">
-                          <input
-                            type="checkbox"
-                            name="price-9-0"
-                            id="price-9-0"
-                          /><label for="price-9-0">от 3000 до 9000 ₸ </label>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="filter-item">
-                    <div
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapseExample-1"
-                      aria-expanded="false"
-                      aria-controls="collapseExample"
-                      class="filter-item-title"
-                    >
-                      Цена
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        class="chevron"
-                      >
-                        <path
-                          d="M12.0002 7.25C12.1992 7.24906 12.3903 7.32836 12.5302 7.47L20.5302 15.47C20.8055 15.7655 20.7974 16.226 20.5118 16.5116C20.2262 16.7972 19.7657 16.8054 19.4702 16.53L12.0002 9.06L4.53015 16.53C4.23464 16.8054 3.77414 16.7972 3.48853 16.5116C3.20292 16.226 3.1948 15.7655 3.47015 15.47L11.4702 7.47C11.61 7.32836 11.8011 7.24906 12.0002 7.25Z"
-                          fill="black"
-                        ></path>
-                      </svg>
-                    </div>
-                    <div id="collapseExample-1" class="collapse">
-                      <div class="filter-item-body">
-                        <div class="input-group">
-                          <input
-                            type="checkbox"
-                            name="price-0-1"
-                            id="price-0-1"
-                          /><label for="price-0-1">от 3000 до 9000 ₸ </label>
-                        </div>
-                        <div class="input-group">
-                          <input
-                            type="checkbox"
-                            name="price-1-1"
-                            id="price-1-1"
-                          /><label for="price-1-1">от 3000 до 9000 ₸ </label>
-                        </div>
-                        <div class="input-group">
-                          <input
-                            type="checkbox"
-                            name="price-2-1"
-                            id="price-2-1"
-                          /><label for="price-2-1">от 3000 до 9000 ₸ </label>
-                        </div>
-                        <div class="input-group">
-                          <input
-                            type="checkbox"
-                            name="price-3-1"
-                            id="price-3-1"
-                          /><label for="price-3-1">от 3000 до 9000 ₸ </label>
-                        </div>
-                        <div class="input-group">
-                          <input
-                            type="checkbox"
-                            name="price-4-1"
-                            id="price-4-1"
-                          /><label for="price-4-1">от 3000 до 9000 ₸ </label>
-                        </div>
-                        <div class="input-group">
-                          <input
-                            type="checkbox"
-                            name="price-5-1"
-                            id="price-5-1"
-                          /><label for="price-5-1">от 3000 до 9000 ₸ </label>
-                        </div>
-                        <div class="input-group">
-                          <input
-                            type="checkbox"
-                            name="price-6-1"
-                            id="price-6-1"
-                          /><label for="price-6-1">от 3000 до 9000 ₸ </label>
-                        </div>
-                        <div class="input-group">
-                          <input
-                            type="checkbox"
-                            name="price-7-1"
-                            id="price-7-1"
-                          /><label for="price-7-1">от 3000 до 9000 ₸ </label>
-                        </div>
-                        <div class="input-group">
-                          <input
-                            type="checkbox"
-                            name="price-8-1"
-                            id="price-8-1"
-                          /><label for="price-8-1">от 3000 до 9000 ₸ </label>
-                        </div>
-                        <div class="input-group">
-                          <input
-                            type="checkbox"
-                            name="price-9-1"
-                            id="price-9-1"
-                          /><label for="price-9-1">от 3000 до 9000 ₸ </label>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="filter-item">
-                    <div
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapseExample-2"
-                      aria-expanded="false"
-                      aria-controls="collapseExample"
-                      class="filter-item-title"
-                    >
-                      Цена
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        class="chevron"
-                      >
-                        <path
-                          d="M12.0002 7.25C12.1992 7.24906 12.3903 7.32836 12.5302 7.47L20.5302 15.47C20.8055 15.7655 20.7974 16.226 20.5118 16.5116C20.2262 16.7972 19.7657 16.8054 19.4702 16.53L12.0002 9.06L4.53015 16.53C4.23464 16.8054 3.77414 16.7972 3.48853 16.5116C3.20292 16.226 3.1948 15.7655 3.47015 15.47L11.4702 7.47C11.61 7.32836 11.8011 7.24906 12.0002 7.25Z"
-                          fill="black"
-                        ></path>
-                      </svg>
-                    </div>
-                    <div id="collapseExample-2" class="collapse">
-                      <div class="filter-item-body">
-                        <div class="input-group">
-                          <input
-                            type="checkbox"
-                            name="price-0-2"
-                            id="price-0-2"
-                          /><label for="price-0-2">от 3000 до 9000 ₸ </label>
-                        </div>
-                        <div class="input-group">
-                          <input
-                            type="checkbox"
-                            name="price-1-2"
-                            id="price-1-2"
-                          /><label for="price-1-2">от 3000 до 9000 ₸ </label>
-                        </div>
-                        <div class="input-group">
-                          <input
-                            type="checkbox"
-                            name="price-2-2"
-                            id="price-2-2"
-                          /><label for="price-2-2">от 3000 до 9000 ₸ </label>
-                        </div>
-                        <div class="input-group">
-                          <input
-                            type="checkbox"
-                            name="price-3-2"
-                            id="price-3-2"
-                          /><label for="price-3-2">от 3000 до 9000 ₸ </label>
-                        </div>
-                        <div class="input-group">
-                          <input
-                            type="checkbox"
-                            name="price-4-2"
-                            id="price-4-2"
-                          /><label for="price-4-2">от 3000 до 9000 ₸ </label>
-                        </div>
-                        <div class="input-group">
-                          <input
-                            type="checkbox"
-                            name="price-5-2"
-                            id="price-5-2"
-                          /><label for="price-5-2">от 3000 до 9000 ₸ </label>
-                        </div>
-                        <div class="input-group">
-                          <input
-                            type="checkbox"
-                            name="price-6-2"
-                            id="price-6-2"
-                          /><label for="price-6-2">от 3000 до 9000 ₸ </label>
-                        </div>
-                        <div class="input-group">
-                          <input
-                            type="checkbox"
-                            name="price-7-2"
-                            id="price-7-2"
-                          /><label for="price-7-2">от 3000 до 9000 ₸ </label>
-                        </div>
-                        <div class="input-group">
-                          <input
-                            type="checkbox"
-                            name="price-8-2"
-                            id="price-8-2"
-                          /><label for="price-8-2">от 3000 до 9000 ₸ </label>
-                        </div>
-                        <div class="input-group">
-                          <input
-                            type="checkbox"
-                            name="price-9-2"
-                            id="price-9-2"
-                          /><label for="price-9-2">от 3000 до 9000 ₸ </label>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div
-                    class="idp-btn"
-                    style="
-                      color: rgb(205, 65, 44);
-                      font-size: 18px;
-                      margin-top: 32px;
-                      border-color: rgb(205, 65, 44);
-                      border-width: 1px;
-                    "
-                  >
-                    Сбросить фильтр
-                  </div>
-                </div>
-              </aside>
-            </div>
-            <div class="col-xxl-9 col-xl-9 col-lg-12">
-              <div class="category-top">
-                <h2 class="cards-title">Smartphones</h2>
-                <div class="category-product-count">Найдено 12 товара</div>
-                <div class="category-sort mobile-hide">
-                  <div class="category-sort-item">
-                    Сортировка по:
-                    <a
-                      class="category-sort-item-select"
-                      href="#"
-                      role="button"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                    >
-                      популярности
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li>
-                        <a class="dropdown-item" href="?price=min">цене</a>
-                      </li>
-                      <li><a class="dropdown-item" href="#">рейтингу</a></li>
-                      <li><a class="dropdown-item" href="#">алфавиту</a></li>
-                    </ul>
-                  </div>
-                  <div class="category-sort-item">
-                    Показывать по:<a
-                      class="category-sort-item-select"
-                      href="#"
-                      role="button"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                    >
-                      12
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">24</a></li>
-                      <li><a class="dropdown-item" href="#">36</a></li>
-                      <li><a class="dropdown-item" href="#">48</a></li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="category-mobile-actions">
-                  <button class="btn sort-icon">
-                    <svg
-                      data-v-37fd61c3=""
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16"
-                      height="16"
-                      viewBox="0 0 16 16"
-                      fill="none"
-                    >
-                      <path
-                        data-v-37fd61c3=""
-                        d="M14.5608 8.67333L11.4675 5.57333C11.2659 5.3878 10.9557 5.3878 10.7542 5.57333L7.68082 8.67333C7.55543 8.86673 7.57849 9.12079 7.73666 9.28845C7.89483 9.45611 8.14712 9.49392 8.34749 9.38L10.4942 7.23333V13.1667C10.4942 13.4428 10.718 13.6667 10.9942 13.6667C11.2703 13.6667 11.4942 13.4428 11.4942 13.1667V7.04L13.8342 9.38C14.0294 9.57497 14.3456 9.57497 14.5408 9.38C14.7414 9.19036 14.7504 8.87402 14.5608 8.67333Z"
-                        fill="white"
-                      ></path>
-                      <path
-                        data-v-37fd61c3=""
-                        d="M7.68082 6.14667C7.48561 5.9517 7.16937 5.9517 6.97415 6.14667L4.84749 8.29333V2.5C4.84749 2.22386 4.62363 2 4.34749 2C4.07134 2 3.84749 2.22386 3.84749 2.5V8.5L1.50749 6.14667C1.31048 5.96309 1.00348 5.96851 0.813073 6.15892C0.622665 6.34933 0.617248 6.65633 0.800821 6.85333L3.89415 9.95333C4.09165 10.1491 4.40999 10.1491 4.60749 9.95333L7.68082 6.85333C7.87579 6.65812 7.87579 6.34188 7.68082 6.14667Z"
-                        fill="white"
-                      ></path>
-                    </svg>
-                  </button>
-                  <button
-                    class="btn sort-icon"
-                    @click="isFilterActive = !isFilterActive"
-                  >
-                    <svg
-                      data-v-2a954a1f=""
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16"
-                      height="16"
-                      viewBox="0 0 16 16"
-                      fill="none"
-                    >
-                      <path
-                        data-v-2a954a1f=""
-                        d="M6.51333 3.80668H2.51333C2.23719 3.80668 2.01333 4.03054 2.01333 4.30668C2.01333 4.58282 2.23719 4.80668 2.51333 4.80668H6.51333C6.78948 4.80668 7.01333 4.58282 7.01333 4.30668C7.01333 4.03054 6.78948 3.80668 6.51333 3.80668Z"
-                        fill="white"
-                      ></path>
-                      <path
-                        data-v-2a954a1f=""
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M3.78667 8.73335H2.51333C2.23719 8.73335 2.01333 8.50949 2.01333 8.23335C2.01333 7.9572 2.23719 7.73335 2.51333 7.73335H3.78667C4.02989 7.0523 4.72789 6.64507 5.44045 6.76849C6.15301 6.89191 6.6734 7.51018 6.6734 8.23335C6.6734 8.95652 6.15301 9.57478 5.44045 9.6982C4.72789 9.82162 4.02989 9.41439 3.78667 8.73335ZM5.18 8.72001C5.44878 8.72001 5.66667 8.50212 5.66667 8.23335C5.66667 7.96457 5.44878 7.74668 5.18 7.74668C5.05093 7.74668 4.92714 7.79795 4.83588 7.88922C4.74461 7.98049 4.69334 8.10427 4.69334 8.23335C4.69334 8.50212 4.91122 8.72001 5.18 8.72001Z"
-                        fill="white"
-                      ></path>
-                      <path
-                        data-v-2a954a1f=""
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M10.3267 4.78001C10.0989 5.31794 9.5773 5.67265 8.99333 5.68668V5.64001C8.22025 5.64297 7.57392 5.05293 7.50662 4.28278C7.43932 3.51263 7.97351 2.81943 8.73538 2.68825C9.49726 2.55707 10.2325 3.0317 10.4267 3.78001C10.4554 3.77624 10.4846 3.77624 10.5133 3.78001H13.1467C13.4228 3.78001 13.6467 4.00387 13.6467 4.28001C13.6467 4.55616 13.4228 4.78001 13.1467 4.78001H10.48C10.4291 4.78636 10.3776 4.78636 10.3267 4.78001ZM9.48245 4.15132C9.47063 3.89023 9.25469 3.68509 8.99333 3.68668V3.71335C8.85943 3.71487 8.73208 3.77149 8.64125 3.86989C8.55042 3.96828 8.50415 4.09975 8.51333 4.23335C8.54556 4.49271 8.7769 4.68031 9.03733 4.65827C9.29776 4.63623 9.49427 4.41242 9.48245 4.15132Z"
-                        fill="white"
-                      ></path>
-                      <path
-                        data-v-2a954a1f=""
-                        d="M6.51333 11.8733H2.51333C2.22983 11.8733 2 12.1032 2 12.3867C2 12.6702 2.22983 12.9 2.51333 12.9H6.51333C6.78947 12.9 7.01333 12.6762 7.01333 12.4C7.01333 12.1239 6.78947 11.9 6.51333 11.9V11.8733Z"
-                        fill="white"
-                      ></path>
-                      <path
-                        data-v-2a954a1f=""
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M10.6 11.8733H13.18V11.9C13.4561 11.9 13.68 12.1239 13.68 12.4C13.68 12.6762 13.4561 12.9 13.18 12.9H10.5133C10.2083 13.5483 9.48281 13.885 8.79083 13.6995C8.09884 13.5139 7.63912 12.8594 7.69938 12.1455C7.75964 11.4316 8.32259 10.8634 9.03589 10.7964C9.74919 10.7295 10.408 11.1831 10.6 11.8733ZM8.72566 12.4576C8.80309 12.6392 8.98258 12.7561 9.18 12.7533C9.44618 12.7497 9.66003 12.5329 9.66001 12.2667C9.65999 12.0692 9.54068 11.8914 9.358 11.8165C9.17533 11.7415 8.96549 11.7844 8.82685 11.925C8.6882 12.0656 8.64823 12.276 8.72566 12.4576Z"
-                        fill="white"
-                      ></path>
-                      <path
-                        data-v-2a954a1f=""
-                        d="M13.18 7.73335H7.84667C7.57053 7.73335 7.34667 7.9572 7.34667 8.23335C7.34667 8.50949 7.57053 8.73335 7.84667 8.73335H13.18C13.4561 8.73335 13.68 8.50949 13.68 8.23335C13.68 7.9572 13.4561 7.73335 13.18 7.73335Z"
-                        fill="white"
-                      ></path>
-                    </svg>
-                  </button>
-                </div>
+          <h2 class="cards-title">Категорий</h2>
+          <div data-v-e8a809c2="" data-v-6bcdeb75="" class="categories-wrapper">
+            <a
+              data-v-c5cdf789=""
+              data-v-6bcdeb75=""
+              href="/categories/smartphones"
+              class="categories-item"
+              data-v-e8a809c2=""
+              ><div data-v-c5cdf789="" class="categories-item-img">
+                <img
+                  data-v-c5cdf789=""
+                  src="./img/category.png"
+                  alt="Смартфоны"
+                />
               </div>
-              <div class="category-container">
-                <div class="card">
-                  <div class="card-inner">
-                    <a href="#" class="card-image">
-                      <img
-                        src="./img/89899ecb202265b5896825d6a5dc8d33.png"
-                        alt="image"
-                      />
-                    </a>
-                    <div class="card-label">Скидка</div>
-                    <div class="card-favorite">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                      >
-                        <path
-                          fill-rule="evenodd"
-                          clip-rule="evenodd"
-                          d="M21 8.50003C21 14.7444 12.0004 20 12.0004 20C12.0004 20 3 14.6667 3 8.51268C3 6.00003 5 4.00003 7.5 4.00003C10 4.00003 12 7.00003 12 7.00003C12 7.00003 14 4.00003 16.5 4.00003C19 4.00003 21 6.00003 21 8.50003Z"
-                          stroke="white"
-                          stroke-width="1.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                      </svg>
-                    </div>
-                    <div class="card-body">
-                      <div class="card-partnumber">p/n: id301264789</div>
-                      <a href="#" class="card-name">
-                        Apple iPhone 15 Pro 128GB Natural Titanium
-                      </a>
-                      <div class="card-prices">
-                        <h5 class="card-prices-new">714 990 ₸</h5>
-                        <h5 class="card-prices-old">819 990 ₸</h5>
-                      </div>
-                      <div class="card-delivery">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="16"
-                          height="16"
-                          viewBox="0 0 16 16"
-                          fill="none"
-                        >
-                          <path
-                            fill-rule="evenodd"
-                            clip-rule="evenodd"
-                            d="M14.6267 5.69999L13.9267 4.99999C13.5931 4.66265 13.141 4.46889 12.6667 4.45999H10V4.07332C10 3.0608 9.17918 2.23999 8.16666 2.23999H2.66666C2.39052 2.23999 2.16666 2.46385 2.16666 2.73999C2.16666 3.01613 2.39052 3.23999 2.66666 3.23999H8.14666C8.6069 3.23999 8.98 3.61309 8.98 4.07332V8.29332C8.98 8.56947 9.20385 8.79332 9.48 8.79332C9.75614 8.79332 9.98 8.56947 9.98 8.29332V5.45999H12.6467C12.8676 5.45911 13.0794 5.54816 13.2333 5.70666L13.9333 6.37332C14.0288 6.4723 14.0976 6.59387 14.1333 6.72666H11.3333C11.0572 6.72666 10.8333 6.95051 10.8333 7.22666C10.8333 7.5028 11.0572 7.72666 11.3333 7.72666H14.1667V10.56C14.1757 10.7867 14.092 11.0073 13.9347 11.1709C13.7774 11.3345 13.5602 11.4268 13.3333 11.4267H12.5933C12.4293 10.6575 11.7498 10.1077 10.9633 10.1077C10.1768 10.1077 9.49739 10.6575 9.33333 11.4267H5.77333C5.59389 10.6316 4.8618 10.0859 4.04862 10.1411C3.23543 10.1963 2.58377 10.8359 2.5134 11.6479C2.44302 12.4599 2.97493 13.2021 3.7665 13.3963C4.55807 13.5906 5.37312 13.179 5.68666 12.4267H9.42666C9.68652 13.0455 10.2922 13.448 10.9633 13.448C11.6345 13.448 12.2401 13.0455 12.5 12.4267H13.3333C14.3459 12.4267 15.1667 11.6058 15.1667 10.5933V6.99999C15.1676 6.51192 14.9731 6.04378 14.6267 5.69999ZM4.14666 12.32C3.92285 12.3309 3.71503 12.2041 3.62233 12.0001C3.52963 11.7961 3.57082 11.5562 3.72625 11.3948C3.88169 11.2334 4.11988 11.1832 4.32724 11.2681C4.5346 11.353 4.66913 11.5559 4.66666 11.78C4.66686 12.0706 4.43706 12.3092 4.14666 12.32ZM10.4543 11.981C10.5385 12.1861 10.7383 12.32 10.96 12.32C11.2593 12.32 11.503 12.0793 11.5067 11.78C11.5094 11.5583 11.3779 11.3569 11.1739 11.2702C10.9698 11.1835 10.7336 11.2286 10.5759 11.3844C10.4181 11.5402 10.3701 11.7759 10.4543 11.981Z"
-                            fill="#3AB54A"
-                          />
-                          <path
-                            d="M7.16666 5.99999C7.16307 5.72535 6.9413 5.50358 6.66666 5.49999H1.33333C1.05719 5.49999 0.833328 5.72385 0.833328 5.99999C0.833328 6.27613 1.05719 6.49999 1.33333 6.49999H6.66666C6.9413 6.4964 7.16307 6.27463 7.16666 5.99999Z"
-                            fill="#3AB54A"
-                          />
-                          <path
-                            d="M6.66666 7.49999H3.33333C3.05719 7.49999 2.83333 7.72385 2.83333 7.99999C2.83333 8.27613 3.05719 8.49999 3.33333 8.49999H6.66666C6.9428 8.49999 7.16666 8.27613 7.16666 7.99999C7.16666 7.72385 6.9428 7.49999 6.66666 7.49999Z"
-                            fill="#3AB54A"
-                          />
-                        </svg>
-                        Доставка: завтра
-                      </div>
-                      <button class="btn card-btn">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                        >
-                          <path
-                            fill-rule="evenodd"
-                            clip-rule="evenodd"
-                            d="M2.75 2C2.33579 2 2 2.33579 2 2.75C2 3.16421 2.33579 3.5 2.75 3.5H4.66442L5.02239 4.9319L6.80064 12.0449C5.77331 12.2531 5 13.1612 5 14.25C5 15.4926 6.00736 16.5 7.25 16.5H18.75C19.1642 16.5 19.5 16.1642 19.5 15.75C19.5 15.3358 19.1642 15 18.75 15H7.25C6.83579 15 6.5 14.6642 6.5 14.25C6.5 13.8358 6.83579 13.5 7.25 13.5H7.75H18.75C19.0942 13.5 19.3941 13.2658 19.4776 12.9319L21.4776 4.9319C21.5336 4.70785 21.4833 4.47048 21.3412 4.28844C21.199 4.1064 20.981 4 20.75 4H6.33558L5.97761 2.5681C5.89414 2.23422 5.59415 2 5.25 2H2.75ZM7.75 18C6.7835 18 6 18.7835 6 19.75C6 20.7165 6.7835 21.5 7.75 21.5C8.7165 21.5 9.5 20.7165 9.5 19.75C9.5 18.7835 8.7165 18 7.75 18ZM17.75 18C16.7835 18 16 18.7835 16 19.75C16 20.7165 16.7835 21.5 17.75 21.5C18.7165 21.5 19.5 20.7165 19.5 19.75C19.5 18.7835 18.7165 18 17.75 18Z"
-                            fill="white"
-                          />
-                        </svg>
-                        В корзину
-                      </button>
-                    </div>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="card-inner">
-                    <a href="#" class="card-image">
-                      <img
-                        src="./img/89899ecb202265b5896825d6a5dc8d33.png"
-                        alt="image"
-                      />
-                    </a>
-                    <div class="card-label">Скидка</div>
-                    <div class="card-favorite">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                      >
-                        <path
-                          fill-rule="evenodd"
-                          clip-rule="evenodd"
-                          d="M21 8.50003C21 14.7444 12.0004 20 12.0004 20C12.0004 20 3 14.6667 3 8.51268C3 6.00003 5 4.00003 7.5 4.00003C10 4.00003 12 7.00003 12 7.00003C12 7.00003 14 4.00003 16.5 4.00003C19 4.00003 21 6.00003 21 8.50003Z"
-                          stroke="white"
-                          stroke-width="1.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                      </svg>
-                    </div>
-                    <div class="card-body">
-                      <div class="card-partnumber">p/n: id301264789</div>
-                      <a href="#" class="card-name">
-                        Apple iPhone 15 Pro 128GB Natural Titanium
-                      </a>
-                      <div class="card-prices">
-                        <h5 class="card-prices-new">714 990 ₸</h5>
-                        <h5 class="card-prices-old">819 990 ₸</h5>
-                      </div>
-                      <div class="card-delivery">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="16"
-                          height="16"
-                          viewBox="0 0 16 16"
-                          fill="none"
-                        >
-                          <path
-                            fill-rule="evenodd"
-                            clip-rule="evenodd"
-                            d="M14.6267 5.69999L13.9267 4.99999C13.5931 4.66265 13.141 4.46889 12.6667 4.45999H10V4.07332C10 3.0608 9.17918 2.23999 8.16666 2.23999H2.66666C2.39052 2.23999 2.16666 2.46385 2.16666 2.73999C2.16666 3.01613 2.39052 3.23999 2.66666 3.23999H8.14666C8.6069 3.23999 8.98 3.61309 8.98 4.07332V8.29332C8.98 8.56947 9.20385 8.79332 9.48 8.79332C9.75614 8.79332 9.98 8.56947 9.98 8.29332V5.45999H12.6467C12.8676 5.45911 13.0794 5.54816 13.2333 5.70666L13.9333 6.37332C14.0288 6.4723 14.0976 6.59387 14.1333 6.72666H11.3333C11.0572 6.72666 10.8333 6.95051 10.8333 7.22666C10.8333 7.5028 11.0572 7.72666 11.3333 7.72666H14.1667V10.56C14.1757 10.7867 14.092 11.0073 13.9347 11.1709C13.7774 11.3345 13.5602 11.4268 13.3333 11.4267H12.5933C12.4293 10.6575 11.7498 10.1077 10.9633 10.1077C10.1768 10.1077 9.49739 10.6575 9.33333 11.4267H5.77333C5.59389 10.6316 4.8618 10.0859 4.04862 10.1411C3.23543 10.1963 2.58377 10.8359 2.5134 11.6479C2.44302 12.4599 2.97493 13.2021 3.7665 13.3963C4.55807 13.5906 5.37312 13.179 5.68666 12.4267H9.42666C9.68652 13.0455 10.2922 13.448 10.9633 13.448C11.6345 13.448 12.2401 13.0455 12.5 12.4267H13.3333C14.3459 12.4267 15.1667 11.6058 15.1667 10.5933V6.99999C15.1676 6.51192 14.9731 6.04378 14.6267 5.69999ZM4.14666 12.32C3.92285 12.3309 3.71503 12.2041 3.62233 12.0001C3.52963 11.7961 3.57082 11.5562 3.72625 11.3948C3.88169 11.2334 4.11988 11.1832 4.32724 11.2681C4.5346 11.353 4.66913 11.5559 4.66666 11.78C4.66686 12.0706 4.43706 12.3092 4.14666 12.32ZM10.4543 11.981C10.5385 12.1861 10.7383 12.32 10.96 12.32C11.2593 12.32 11.503 12.0793 11.5067 11.78C11.5094 11.5583 11.3779 11.3569 11.1739 11.2702C10.9698 11.1835 10.7336 11.2286 10.5759 11.3844C10.4181 11.5402 10.3701 11.7759 10.4543 11.981Z"
-                            fill="#3AB54A"
-                          />
-                          <path
-                            d="M7.16666 5.99999C7.16307 5.72535 6.9413 5.50358 6.66666 5.49999H1.33333C1.05719 5.49999 0.833328 5.72385 0.833328 5.99999C0.833328 6.27613 1.05719 6.49999 1.33333 6.49999H6.66666C6.9413 6.4964 7.16307 6.27463 7.16666 5.99999Z"
-                            fill="#3AB54A"
-                          />
-                          <path
-                            d="M6.66666 7.49999H3.33333C3.05719 7.49999 2.83333 7.72385 2.83333 7.99999C2.83333 8.27613 3.05719 8.49999 3.33333 8.49999H6.66666C6.9428 8.49999 7.16666 8.27613 7.16666 7.99999C7.16666 7.72385 6.9428 7.49999 6.66666 7.49999Z"
-                            fill="#3AB54A"
-                          />
-                        </svg>
-                        Доставка: завтра
-                      </div>
-                      <button class="btn card-btn">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                        >
-                          <path
-                            fill-rule="evenodd"
-                            clip-rule="evenodd"
-                            d="M2.75 2C2.33579 2 2 2.33579 2 2.75C2 3.16421 2.33579 3.5 2.75 3.5H4.66442L5.02239 4.9319L6.80064 12.0449C5.77331 12.2531 5 13.1612 5 14.25C5 15.4926 6.00736 16.5 7.25 16.5H18.75C19.1642 16.5 19.5 16.1642 19.5 15.75C19.5 15.3358 19.1642 15 18.75 15H7.25C6.83579 15 6.5 14.6642 6.5 14.25C6.5 13.8358 6.83579 13.5 7.25 13.5H7.75H18.75C19.0942 13.5 19.3941 13.2658 19.4776 12.9319L21.4776 4.9319C21.5336 4.70785 21.4833 4.47048 21.3412 4.28844C21.199 4.1064 20.981 4 20.75 4H6.33558L5.97761 2.5681C5.89414 2.23422 5.59415 2 5.25 2H2.75ZM7.75 18C6.7835 18 6 18.7835 6 19.75C6 20.7165 6.7835 21.5 7.75 21.5C8.7165 21.5 9.5 20.7165 9.5 19.75C9.5 18.7835 8.7165 18 7.75 18ZM17.75 18C16.7835 18 16 18.7835 16 19.75C16 20.7165 16.7835 21.5 17.75 21.5C18.7165 21.5 19.5 20.7165 19.5 19.75C19.5 18.7835 18.7165 18 17.75 18Z"
-                            fill="white"
-                          />
-                        </svg>
-                        В корзину
-                      </button>
-                    </div>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="card-inner">
-                    <a href="#" class="card-image">
-                      <img
-                        src="./img/89899ecb202265b5896825d6a5dc8d33.png"
-                        alt="image"
-                      />
-                    </a>
-                    <div class="card-label">Скидка</div>
-                    <div class="card-favorite">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                      >
-                        <path
-                          fill-rule="evenodd"
-                          clip-rule="evenodd"
-                          d="M21 8.50003C21 14.7444 12.0004 20 12.0004 20C12.0004 20 3 14.6667 3 8.51268C3 6.00003 5 4.00003 7.5 4.00003C10 4.00003 12 7.00003 12 7.00003C12 7.00003 14 4.00003 16.5 4.00003C19 4.00003 21 6.00003 21 8.50003Z"
-                          stroke="white"
-                          stroke-width="1.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                      </svg>
-                    </div>
-                    <div class="card-body">
-                      <div class="card-partnumber">p/n: id301264789</div>
-                      <a href="#" class="card-name">
-                        Apple iPhone 15 Pro 128GB Natural Titanium
-                      </a>
-                      <div class="card-prices">
-                        <h5 class="card-prices-new">714 990 ₸</h5>
-                        <h5 class="card-prices-old">819 990 ₸</h5>
-                      </div>
-                      <div class="card-delivery">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="16"
-                          height="16"
-                          viewBox="0 0 16 16"
-                          fill="none"
-                        >
-                          <path
-                            fill-rule="evenodd"
-                            clip-rule="evenodd"
-                            d="M14.6267 5.69999L13.9267 4.99999C13.5931 4.66265 13.141 4.46889 12.6667 4.45999H10V4.07332C10 3.0608 9.17918 2.23999 8.16666 2.23999H2.66666C2.39052 2.23999 2.16666 2.46385 2.16666 2.73999C2.16666 3.01613 2.39052 3.23999 2.66666 3.23999H8.14666C8.6069 3.23999 8.98 3.61309 8.98 4.07332V8.29332C8.98 8.56947 9.20385 8.79332 9.48 8.79332C9.75614 8.79332 9.98 8.56947 9.98 8.29332V5.45999H12.6467C12.8676 5.45911 13.0794 5.54816 13.2333 5.70666L13.9333 6.37332C14.0288 6.4723 14.0976 6.59387 14.1333 6.72666H11.3333C11.0572 6.72666 10.8333 6.95051 10.8333 7.22666C10.8333 7.5028 11.0572 7.72666 11.3333 7.72666H14.1667V10.56C14.1757 10.7867 14.092 11.0073 13.9347 11.1709C13.7774 11.3345 13.5602 11.4268 13.3333 11.4267H12.5933C12.4293 10.6575 11.7498 10.1077 10.9633 10.1077C10.1768 10.1077 9.49739 10.6575 9.33333 11.4267H5.77333C5.59389 10.6316 4.8618 10.0859 4.04862 10.1411C3.23543 10.1963 2.58377 10.8359 2.5134 11.6479C2.44302 12.4599 2.97493 13.2021 3.7665 13.3963C4.55807 13.5906 5.37312 13.179 5.68666 12.4267H9.42666C9.68652 13.0455 10.2922 13.448 10.9633 13.448C11.6345 13.448 12.2401 13.0455 12.5 12.4267H13.3333C14.3459 12.4267 15.1667 11.6058 15.1667 10.5933V6.99999C15.1676 6.51192 14.9731 6.04378 14.6267 5.69999ZM4.14666 12.32C3.92285 12.3309 3.71503 12.2041 3.62233 12.0001C3.52963 11.7961 3.57082 11.5562 3.72625 11.3948C3.88169 11.2334 4.11988 11.1832 4.32724 11.2681C4.5346 11.353 4.66913 11.5559 4.66666 11.78C4.66686 12.0706 4.43706 12.3092 4.14666 12.32ZM10.4543 11.981C10.5385 12.1861 10.7383 12.32 10.96 12.32C11.2593 12.32 11.503 12.0793 11.5067 11.78C11.5094 11.5583 11.3779 11.3569 11.1739 11.2702C10.9698 11.1835 10.7336 11.2286 10.5759 11.3844C10.4181 11.5402 10.3701 11.7759 10.4543 11.981Z"
-                            fill="#3AB54A"
-                          />
-                          <path
-                            d="M7.16666 5.99999C7.16307 5.72535 6.9413 5.50358 6.66666 5.49999H1.33333C1.05719 5.49999 0.833328 5.72385 0.833328 5.99999C0.833328 6.27613 1.05719 6.49999 1.33333 6.49999H6.66666C6.9413 6.4964 7.16307 6.27463 7.16666 5.99999Z"
-                            fill="#3AB54A"
-                          />
-                          <path
-                            d="M6.66666 7.49999H3.33333C3.05719 7.49999 2.83333 7.72385 2.83333 7.99999C2.83333 8.27613 3.05719 8.49999 3.33333 8.49999H6.66666C6.9428 8.49999 7.16666 8.27613 7.16666 7.99999C7.16666 7.72385 6.9428 7.49999 6.66666 7.49999Z"
-                            fill="#3AB54A"
-                          />
-                        </svg>
-                        Доставка: завтра
-                      </div>
-                      <button class="btn card-btn">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                        >
-                          <path
-                            fill-rule="evenodd"
-                            clip-rule="evenodd"
-                            d="M2.75 2C2.33579 2 2 2.33579 2 2.75C2 3.16421 2.33579 3.5 2.75 3.5H4.66442L5.02239 4.9319L6.80064 12.0449C5.77331 12.2531 5 13.1612 5 14.25C5 15.4926 6.00736 16.5 7.25 16.5H18.75C19.1642 16.5 19.5 16.1642 19.5 15.75C19.5 15.3358 19.1642 15 18.75 15H7.25C6.83579 15 6.5 14.6642 6.5 14.25C6.5 13.8358 6.83579 13.5 7.25 13.5H7.75H18.75C19.0942 13.5 19.3941 13.2658 19.4776 12.9319L21.4776 4.9319C21.5336 4.70785 21.4833 4.47048 21.3412 4.28844C21.199 4.1064 20.981 4 20.75 4H6.33558L5.97761 2.5681C5.89414 2.23422 5.59415 2 5.25 2H2.75ZM7.75 18C6.7835 18 6 18.7835 6 19.75C6 20.7165 6.7835 21.5 7.75 21.5C8.7165 21.5 9.5 20.7165 9.5 19.75C9.5 18.7835 8.7165 18 7.75 18ZM17.75 18C16.7835 18 16 18.7835 16 19.75C16 20.7165 16.7835 21.5 17.75 21.5C18.7165 21.5 19.5 20.7165 19.5 19.75C19.5 18.7835 18.7165 18 17.75 18Z"
-                            fill="white"
-                          />
-                        </svg>
-                        В корзину
-                      </button>
-                    </div>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="card-inner">
-                    <a href="#" class="card-image">
-                      <img
-                        src="./img/89899ecb202265b5896825d6a5dc8d33.png"
-                        alt="image"
-                      />
-                    </a>
-                    <div class="card-label">Скидка</div>
-                    <div class="card-favorite">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                      >
-                        <path
-                          fill-rule="evenodd"
-                          clip-rule="evenodd"
-                          d="M21 8.50003C21 14.7444 12.0004 20 12.0004 20C12.0004 20 3 14.6667 3 8.51268C3 6.00003 5 4.00003 7.5 4.00003C10 4.00003 12 7.00003 12 7.00003C12 7.00003 14 4.00003 16.5 4.00003C19 4.00003 21 6.00003 21 8.50003Z"
-                          stroke="white"
-                          stroke-width="1.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                      </svg>
-                    </div>
-                    <div class="card-body">
-                      <div class="card-partnumber">p/n: id301264789</div>
-                      <a href="#" class="card-name">
-                        Apple iPhone 15 Pro 128GB Natural Titanium
-                      </a>
-                      <div class="card-prices">
-                        <h5 class="card-prices-new">714 990 ₸</h5>
-                        <h5 class="card-prices-old">819 990 ₸</h5>
-                      </div>
-                      <div class="card-delivery">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="16"
-                          height="16"
-                          viewBox="0 0 16 16"
-                          fill="none"
-                        >
-                          <path
-                            fill-rule="evenodd"
-                            clip-rule="evenodd"
-                            d="M14.6267 5.69999L13.9267 4.99999C13.5931 4.66265 13.141 4.46889 12.6667 4.45999H10V4.07332C10 3.0608 9.17918 2.23999 8.16666 2.23999H2.66666C2.39052 2.23999 2.16666 2.46385 2.16666 2.73999C2.16666 3.01613 2.39052 3.23999 2.66666 3.23999H8.14666C8.6069 3.23999 8.98 3.61309 8.98 4.07332V8.29332C8.98 8.56947 9.20385 8.79332 9.48 8.79332C9.75614 8.79332 9.98 8.56947 9.98 8.29332V5.45999H12.6467C12.8676 5.45911 13.0794 5.54816 13.2333 5.70666L13.9333 6.37332C14.0288 6.4723 14.0976 6.59387 14.1333 6.72666H11.3333C11.0572 6.72666 10.8333 6.95051 10.8333 7.22666C10.8333 7.5028 11.0572 7.72666 11.3333 7.72666H14.1667V10.56C14.1757 10.7867 14.092 11.0073 13.9347 11.1709C13.7774 11.3345 13.5602 11.4268 13.3333 11.4267H12.5933C12.4293 10.6575 11.7498 10.1077 10.9633 10.1077C10.1768 10.1077 9.49739 10.6575 9.33333 11.4267H5.77333C5.59389 10.6316 4.8618 10.0859 4.04862 10.1411C3.23543 10.1963 2.58377 10.8359 2.5134 11.6479C2.44302 12.4599 2.97493 13.2021 3.7665 13.3963C4.55807 13.5906 5.37312 13.179 5.68666 12.4267H9.42666C9.68652 13.0455 10.2922 13.448 10.9633 13.448C11.6345 13.448 12.2401 13.0455 12.5 12.4267H13.3333C14.3459 12.4267 15.1667 11.6058 15.1667 10.5933V6.99999C15.1676 6.51192 14.9731 6.04378 14.6267 5.69999ZM4.14666 12.32C3.92285 12.3309 3.71503 12.2041 3.62233 12.0001C3.52963 11.7961 3.57082 11.5562 3.72625 11.3948C3.88169 11.2334 4.11988 11.1832 4.32724 11.2681C4.5346 11.353 4.66913 11.5559 4.66666 11.78C4.66686 12.0706 4.43706 12.3092 4.14666 12.32ZM10.4543 11.981C10.5385 12.1861 10.7383 12.32 10.96 12.32C11.2593 12.32 11.503 12.0793 11.5067 11.78C11.5094 11.5583 11.3779 11.3569 11.1739 11.2702C10.9698 11.1835 10.7336 11.2286 10.5759 11.3844C10.4181 11.5402 10.3701 11.7759 10.4543 11.981Z"
-                            fill="#3AB54A"
-                          />
-                          <path
-                            d="M7.16666 5.99999C7.16307 5.72535 6.9413 5.50358 6.66666 5.49999H1.33333C1.05719 5.49999 0.833328 5.72385 0.833328 5.99999C0.833328 6.27613 1.05719 6.49999 1.33333 6.49999H6.66666C6.9413 6.4964 7.16307 6.27463 7.16666 5.99999Z"
-                            fill="#3AB54A"
-                          />
-                          <path
-                            d="M6.66666 7.49999H3.33333C3.05719 7.49999 2.83333 7.72385 2.83333 7.99999C2.83333 8.27613 3.05719 8.49999 3.33333 8.49999H6.66666C6.9428 8.49999 7.16666 8.27613 7.16666 7.99999C7.16666 7.72385 6.9428 7.49999 6.66666 7.49999Z"
-                            fill="#3AB54A"
-                          />
-                        </svg>
-                        Доставка: завтра
-                      </div>
-                      <button class="btn card-btn">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                        >
-                          <path
-                            fill-rule="evenodd"
-                            clip-rule="evenodd"
-                            d="M2.75 2C2.33579 2 2 2.33579 2 2.75C2 3.16421 2.33579 3.5 2.75 3.5H4.66442L5.02239 4.9319L6.80064 12.0449C5.77331 12.2531 5 13.1612 5 14.25C5 15.4926 6.00736 16.5 7.25 16.5H18.75C19.1642 16.5 19.5 16.1642 19.5 15.75C19.5 15.3358 19.1642 15 18.75 15H7.25C6.83579 15 6.5 14.6642 6.5 14.25C6.5 13.8358 6.83579 13.5 7.25 13.5H7.75H18.75C19.0942 13.5 19.3941 13.2658 19.4776 12.9319L21.4776 4.9319C21.5336 4.70785 21.4833 4.47048 21.3412 4.28844C21.199 4.1064 20.981 4 20.75 4H6.33558L5.97761 2.5681C5.89414 2.23422 5.59415 2 5.25 2H2.75ZM7.75 18C6.7835 18 6 18.7835 6 19.75C6 20.7165 6.7835 21.5 7.75 21.5C8.7165 21.5 9.5 20.7165 9.5 19.75C9.5 18.7835 8.7165 18 7.75 18ZM17.75 18C16.7835 18 16 18.7835 16 19.75C16 20.7165 16.7835 21.5 17.75 21.5C18.7165 21.5 19.5 20.7165 19.5 19.75C19.5 18.7835 18.7165 18 17.75 18Z"
-                            fill="white"
-                          />
-                        </svg>
-                        В корзину
-                      </button>
-                    </div>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="card-inner">
-                    <a href="#" class="card-image">
-                      <img
-                        src="./img/89899ecb202265b5896825d6a5dc8d33.png"
-                        alt="image"
-                      />
-                    </a>
-                    <div class="card-label">Скидка</div>
-                    <div class="card-favorite">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                      >
-                        <path
-                          fill-rule="evenodd"
-                          clip-rule="evenodd"
-                          d="M21 8.50003C21 14.7444 12.0004 20 12.0004 20C12.0004 20 3 14.6667 3 8.51268C3 6.00003 5 4.00003 7.5 4.00003C10 4.00003 12 7.00003 12 7.00003C12 7.00003 14 4.00003 16.5 4.00003C19 4.00003 21 6.00003 21 8.50003Z"
-                          stroke="white"
-                          stroke-width="1.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                      </svg>
-                    </div>
-                    <div class="card-body">
-                      <div class="card-partnumber">p/n: id301264789</div>
-                      <a href="#" class="card-name">
-                        Apple iPhone 15 Pro 128GB Natural Titanium
-                      </a>
-                      <div class="card-prices">
-                        <h5 class="card-prices-new">714 990 ₸</h5>
-                        <h5 class="card-prices-old">819 990 ₸</h5>
-                      </div>
-                      <div class="card-delivery">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="16"
-                          height="16"
-                          viewBox="0 0 16 16"
-                          fill="none"
-                        >
-                          <path
-                            fill-rule="evenodd"
-                            clip-rule="evenodd"
-                            d="M14.6267 5.69999L13.9267 4.99999C13.5931 4.66265 13.141 4.46889 12.6667 4.45999H10V4.07332C10 3.0608 9.17918 2.23999 8.16666 2.23999H2.66666C2.39052 2.23999 2.16666 2.46385 2.16666 2.73999C2.16666 3.01613 2.39052 3.23999 2.66666 3.23999H8.14666C8.6069 3.23999 8.98 3.61309 8.98 4.07332V8.29332C8.98 8.56947 9.20385 8.79332 9.48 8.79332C9.75614 8.79332 9.98 8.56947 9.98 8.29332V5.45999H12.6467C12.8676 5.45911 13.0794 5.54816 13.2333 5.70666L13.9333 6.37332C14.0288 6.4723 14.0976 6.59387 14.1333 6.72666H11.3333C11.0572 6.72666 10.8333 6.95051 10.8333 7.22666C10.8333 7.5028 11.0572 7.72666 11.3333 7.72666H14.1667V10.56C14.1757 10.7867 14.092 11.0073 13.9347 11.1709C13.7774 11.3345 13.5602 11.4268 13.3333 11.4267H12.5933C12.4293 10.6575 11.7498 10.1077 10.9633 10.1077C10.1768 10.1077 9.49739 10.6575 9.33333 11.4267H5.77333C5.59389 10.6316 4.8618 10.0859 4.04862 10.1411C3.23543 10.1963 2.58377 10.8359 2.5134 11.6479C2.44302 12.4599 2.97493 13.2021 3.7665 13.3963C4.55807 13.5906 5.37312 13.179 5.68666 12.4267H9.42666C9.68652 13.0455 10.2922 13.448 10.9633 13.448C11.6345 13.448 12.2401 13.0455 12.5 12.4267H13.3333C14.3459 12.4267 15.1667 11.6058 15.1667 10.5933V6.99999C15.1676 6.51192 14.9731 6.04378 14.6267 5.69999ZM4.14666 12.32C3.92285 12.3309 3.71503 12.2041 3.62233 12.0001C3.52963 11.7961 3.57082 11.5562 3.72625 11.3948C3.88169 11.2334 4.11988 11.1832 4.32724 11.2681C4.5346 11.353 4.66913 11.5559 4.66666 11.78C4.66686 12.0706 4.43706 12.3092 4.14666 12.32ZM10.4543 11.981C10.5385 12.1861 10.7383 12.32 10.96 12.32C11.2593 12.32 11.503 12.0793 11.5067 11.78C11.5094 11.5583 11.3779 11.3569 11.1739 11.2702C10.9698 11.1835 10.7336 11.2286 10.5759 11.3844C10.4181 11.5402 10.3701 11.7759 10.4543 11.981Z"
-                            fill="#3AB54A"
-                          />
-                          <path
-                            d="M7.16666 5.99999C7.16307 5.72535 6.9413 5.50358 6.66666 5.49999H1.33333C1.05719 5.49999 0.833328 5.72385 0.833328 5.99999C0.833328 6.27613 1.05719 6.49999 1.33333 6.49999H6.66666C6.9413 6.4964 7.16307 6.27463 7.16666 5.99999Z"
-                            fill="#3AB54A"
-                          />
-                          <path
-                            d="M6.66666 7.49999H3.33333C3.05719 7.49999 2.83333 7.72385 2.83333 7.99999C2.83333 8.27613 3.05719 8.49999 3.33333 8.49999H6.66666C6.9428 8.49999 7.16666 8.27613 7.16666 7.99999C7.16666 7.72385 6.9428 7.49999 6.66666 7.49999Z"
-                            fill="#3AB54A"
-                          />
-                        </svg>
-                        Доставка: завтра
-                      </div>
-                      <button class="btn card-btn">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                        >
-                          <path
-                            fill-rule="evenodd"
-                            clip-rule="evenodd"
-                            d="M2.75 2C2.33579 2 2 2.33579 2 2.75C2 3.16421 2.33579 3.5 2.75 3.5H4.66442L5.02239 4.9319L6.80064 12.0449C5.77331 12.2531 5 13.1612 5 14.25C5 15.4926 6.00736 16.5 7.25 16.5H18.75C19.1642 16.5 19.5 16.1642 19.5 15.75C19.5 15.3358 19.1642 15 18.75 15H7.25C6.83579 15 6.5 14.6642 6.5 14.25C6.5 13.8358 6.83579 13.5 7.25 13.5H7.75H18.75C19.0942 13.5 19.3941 13.2658 19.4776 12.9319L21.4776 4.9319C21.5336 4.70785 21.4833 4.47048 21.3412 4.28844C21.199 4.1064 20.981 4 20.75 4H6.33558L5.97761 2.5681C5.89414 2.23422 5.59415 2 5.25 2H2.75ZM7.75 18C6.7835 18 6 18.7835 6 19.75C6 20.7165 6.7835 21.5 7.75 21.5C8.7165 21.5 9.5 20.7165 9.5 19.75C9.5 18.7835 8.7165 18 7.75 18ZM17.75 18C16.7835 18 16 18.7835 16 19.75C16 20.7165 16.7835 21.5 17.75 21.5C18.7165 21.5 19.5 20.7165 19.5 19.75C19.5 18.7835 18.7165 18 17.75 18Z"
-                            fill="white"
-                          />
-                        </svg>
-                        В корзину
-                      </button>
-                    </div>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="card-inner">
-                    <a href="#" class="card-image">
-                      <img
-                        src="./img/89899ecb202265b5896825d6a5dc8d33.png"
-                        alt="image"
-                      />
-                    </a>
-                    <div class="card-label">Скидка</div>
-                    <div class="card-favorite">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                      >
-                        <path
-                          fill-rule="evenodd"
-                          clip-rule="evenodd"
-                          d="M21 8.50003C21 14.7444 12.0004 20 12.0004 20C12.0004 20 3 14.6667 3 8.51268C3 6.00003 5 4.00003 7.5 4.00003C10 4.00003 12 7.00003 12 7.00003C12 7.00003 14 4.00003 16.5 4.00003C19 4.00003 21 6.00003 21 8.50003Z"
-                          stroke="white"
-                          stroke-width="1.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                      </svg>
-                    </div>
-                    <div class="card-body">
-                      <div class="card-partnumber">p/n: id301264789</div>
-                      <a href="#" class="card-name">
-                        Apple iPhone 15 Pro 128GB Natural Titanium
-                      </a>
-                      <div class="card-prices">
-                        <h5 class="card-prices-new">714 990 ₸</h5>
-                        <h5 class="card-prices-old">819 990 ₸</h5>
-                      </div>
-                      <div class="card-delivery">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="16"
-                          height="16"
-                          viewBox="0 0 16 16"
-                          fill="none"
-                        >
-                          <path
-                            fill-rule="evenodd"
-                            clip-rule="evenodd"
-                            d="M14.6267 5.69999L13.9267 4.99999C13.5931 4.66265 13.141 4.46889 12.6667 4.45999H10V4.07332C10 3.0608 9.17918 2.23999 8.16666 2.23999H2.66666C2.39052 2.23999 2.16666 2.46385 2.16666 2.73999C2.16666 3.01613 2.39052 3.23999 2.66666 3.23999H8.14666C8.6069 3.23999 8.98 3.61309 8.98 4.07332V8.29332C8.98 8.56947 9.20385 8.79332 9.48 8.79332C9.75614 8.79332 9.98 8.56947 9.98 8.29332V5.45999H12.6467C12.8676 5.45911 13.0794 5.54816 13.2333 5.70666L13.9333 6.37332C14.0288 6.4723 14.0976 6.59387 14.1333 6.72666H11.3333C11.0572 6.72666 10.8333 6.95051 10.8333 7.22666C10.8333 7.5028 11.0572 7.72666 11.3333 7.72666H14.1667V10.56C14.1757 10.7867 14.092 11.0073 13.9347 11.1709C13.7774 11.3345 13.5602 11.4268 13.3333 11.4267H12.5933C12.4293 10.6575 11.7498 10.1077 10.9633 10.1077C10.1768 10.1077 9.49739 10.6575 9.33333 11.4267H5.77333C5.59389 10.6316 4.8618 10.0859 4.04862 10.1411C3.23543 10.1963 2.58377 10.8359 2.5134 11.6479C2.44302 12.4599 2.97493 13.2021 3.7665 13.3963C4.55807 13.5906 5.37312 13.179 5.68666 12.4267H9.42666C9.68652 13.0455 10.2922 13.448 10.9633 13.448C11.6345 13.448 12.2401 13.0455 12.5 12.4267H13.3333C14.3459 12.4267 15.1667 11.6058 15.1667 10.5933V6.99999C15.1676 6.51192 14.9731 6.04378 14.6267 5.69999ZM4.14666 12.32C3.92285 12.3309 3.71503 12.2041 3.62233 12.0001C3.52963 11.7961 3.57082 11.5562 3.72625 11.3948C3.88169 11.2334 4.11988 11.1832 4.32724 11.2681C4.5346 11.353 4.66913 11.5559 4.66666 11.78C4.66686 12.0706 4.43706 12.3092 4.14666 12.32ZM10.4543 11.981C10.5385 12.1861 10.7383 12.32 10.96 12.32C11.2593 12.32 11.503 12.0793 11.5067 11.78C11.5094 11.5583 11.3779 11.3569 11.1739 11.2702C10.9698 11.1835 10.7336 11.2286 10.5759 11.3844C10.4181 11.5402 10.3701 11.7759 10.4543 11.981Z"
-                            fill="#3AB54A"
-                          />
-                          <path
-                            d="M7.16666 5.99999C7.16307 5.72535 6.9413 5.50358 6.66666 5.49999H1.33333C1.05719 5.49999 0.833328 5.72385 0.833328 5.99999C0.833328 6.27613 1.05719 6.49999 1.33333 6.49999H6.66666C6.9413 6.4964 7.16307 6.27463 7.16666 5.99999Z"
-                            fill="#3AB54A"
-                          />
-                          <path
-                            d="M6.66666 7.49999H3.33333C3.05719 7.49999 2.83333 7.72385 2.83333 7.99999C2.83333 8.27613 3.05719 8.49999 3.33333 8.49999H6.66666C6.9428 8.49999 7.16666 8.27613 7.16666 7.99999C7.16666 7.72385 6.9428 7.49999 6.66666 7.49999Z"
-                            fill="#3AB54A"
-                          />
-                        </svg>
-                        Доставка: завтра
-                      </div>
-                      <button class="btn card-btn">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                        >
-                          <path
-                            fill-rule="evenodd"
-                            clip-rule="evenodd"
-                            d="M2.75 2C2.33579 2 2 2.33579 2 2.75C2 3.16421 2.33579 3.5 2.75 3.5H4.66442L5.02239 4.9319L6.80064 12.0449C5.77331 12.2531 5 13.1612 5 14.25C5 15.4926 6.00736 16.5 7.25 16.5H18.75C19.1642 16.5 19.5 16.1642 19.5 15.75C19.5 15.3358 19.1642 15 18.75 15H7.25C6.83579 15 6.5 14.6642 6.5 14.25C6.5 13.8358 6.83579 13.5 7.25 13.5H7.75H18.75C19.0942 13.5 19.3941 13.2658 19.4776 12.9319L21.4776 4.9319C21.5336 4.70785 21.4833 4.47048 21.3412 4.28844C21.199 4.1064 20.981 4 20.75 4H6.33558L5.97761 2.5681C5.89414 2.23422 5.59415 2 5.25 2H2.75ZM7.75 18C6.7835 18 6 18.7835 6 19.75C6 20.7165 6.7835 21.5 7.75 21.5C8.7165 21.5 9.5 20.7165 9.5 19.75C9.5 18.7835 8.7165 18 7.75 18ZM17.75 18C16.7835 18 16 18.7835 16 19.75C16 20.7165 16.7835 21.5 17.75 21.5C18.7165 21.5 19.5 20.7165 19.5 19.75C19.5 18.7835 18.7165 18 17.75 18Z"
-                            fill="white"
-                          />
-                        </svg>
-                        В корзину
-                      </button>
-                    </div>
-                  </div>
-                </div>
+              <h4 data-v-c5cdf789="" class="categories-item-title">
+                Смартфоны
+              </h4>
+              <svg
+                data-v-3a7fb216=""
+                data-v-c5cdf789=""
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                class="categories-item-chevron"
+              >
+                <path
+                  data-v-3a7fb216=""
+                  d="M12.0002 7.25C12.1992 7.24906 12.3903 7.32836 12.5302 7.47L20.5302 15.47C20.8055 15.7655 20.7974 16.226 20.5118 16.5116C20.2262 16.7972 19.7657 16.8054 19.4702 16.53L12.0002 9.06L4.53015 16.53C4.23464 16.8054 3.77414 16.7972 3.48853 16.5116C3.20292 16.226 3.1948 15.7655 3.47015 15.47L11.4702 7.47C11.61 7.32836 11.8011 7.24906 12.0002 7.25Z"
+                  fill="black"
+                ></path></svg></a
+            ><a
+              data-v-c5cdf789=""
+              data-v-6bcdeb75=""
+              href="/categories/laptops"
+              class="categories-item"
+              data-v-e8a809c2=""
+              ><div data-v-c5cdf789="" class="categories-item-img">
+                <img
+                  data-v-c5cdf789=""
+                  src="./img/category.png"
+                  alt="Ноутбуки"
+                />
               </div>
-
-              <nav aria-label="pagination" class="pagination">
-                <div class="banners-button-prev btn">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    :height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                  >
-                    <path
-                      d="M10.9498 19.5201C11.0931 19.6553 11.2828 19.7304 11.4798 19.7301C11.6761 19.7318 11.8643 19.6521 11.9998 19.5101C12.1428 19.3708 12.2234 19.1797 12.2234 18.9801C12.2234 18.7805 12.1428 18.5894 11.9998 18.4501L6.29975 12.75H19.52C19.9342 12.75 20.27 12.4142 20.27 12C20.27 11.5858 19.9342 11.25 19.52 11.25H6.29756L12.0098 5.52006C12.1528 5.38077 12.2334 5.18965 12.2334 4.99006C12.2334 4.79048 12.1528 4.59935 12.0098 4.46006C11.717 4.16761 11.2426 4.16761 10.9498 4.46006L3.94981 11.4601C3.65736 11.7529 3.65736 12.2272 3.94981 12.5201L10.9498 19.5201Z"
-                      fill="#333333"
-                    />
-                  </svg>
-                </div>
-                <ul class="pagination-list">
-                  <li class="page-item active">
-                    <a class="page-link" href="#">1</a>
-                  </li>
-                  <li class="page-item"><a class="page-link" href="#">2</a></li>
-                  <li class="page-item"><a class="page-link" href="#">3</a></li>
-                </ul>
-                <div
-                  class="banners-button-prev btn"
-                  style="transform: rotate(180deg)"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                  >
-                    <path
-                      d="M10.9498 19.5201C11.0931 19.6553 11.2828 19.7304 11.4798 19.7301C11.6761 19.7318 11.8643 19.6521 11.9998 19.5101C12.1428 19.3708 12.2234 19.1797 12.2234 18.9801C12.2234 18.7805 12.1428 18.5894 11.9998 18.4501L6.29975 12.75H19.52C19.9342 12.75 20.27 12.4142 20.27 12C20.27 11.5858 19.9342 11.25 19.52 11.25H6.29756L12.0098 5.52006C12.1528 5.38077 12.2334 5.18965 12.2334 4.99006C12.2334 4.79048 12.1528 4.59935 12.0098 4.46006C11.717 4.16761 11.2426 4.16761 10.9498 4.46006L3.94981 11.4601C3.65736 11.7529 3.65736 12.2272 3.94981 12.5201L10.9498 19.5201Z"
-                      fill="#333333"
-                    />
-                  </svg>
-                </div>
-              </nav>
-            </div>
+              <h4 data-v-c5cdf789="" class="categories-item-title">Ноутбуки</h4>
+              <svg
+                data-v-3a7fb216=""
+                data-v-c5cdf789=""
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                class="categories-item-chevron"
+              >
+                <path
+                  data-v-3a7fb216=""
+                  d="M12.0002 7.25C12.1992 7.24906 12.3903 7.32836 12.5302 7.47L20.5302 15.47C20.8055 15.7655 20.7974 16.226 20.5118 16.5116C20.2262 16.7972 19.7657 16.8054 19.4702 16.53L12.0002 9.06L4.53015 16.53C4.23464 16.8054 3.77414 16.7972 3.48853 16.5116C3.20292 16.226 3.1948 15.7655 3.47015 15.47L11.4702 7.47C11.61 7.32836 11.8011 7.24906 12.0002 7.25Z"
+                  fill="black"
+                ></path></svg></a
+            ><a
+              data-v-c5cdf789=""
+              data-v-6bcdeb75=""
+              href="/categories/cameras"
+              class="categories-item"
+              data-v-e8a809c2=""
+              ><div data-v-c5cdf789="" class="categories-item-img">
+                <img
+                  data-v-c5cdf789=""
+                  src="./img/category.png"
+                  alt="Фотоаппараты"
+                />
+              </div>
+              <h4 data-v-c5cdf789="" class="categories-item-title">
+                Фотоаппараты
+              </h4>
+              <svg
+                data-v-3a7fb216=""
+                data-v-c5cdf789=""
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                class="categories-item-chevron"
+              >
+                <path
+                  data-v-3a7fb216=""
+                  d="M12.0002 7.25C12.1992 7.24906 12.3903 7.32836 12.5302 7.47L20.5302 15.47C20.8055 15.7655 20.7974 16.226 20.5118 16.5116C20.2262 16.7972 19.7657 16.8054 19.4702 16.53L12.0002 9.06L4.53015 16.53C4.23464 16.8054 3.77414 16.7972 3.48853 16.5116C3.20292 16.226 3.1948 15.7655 3.47015 15.47L11.4702 7.47C11.61 7.32836 11.8011 7.24906 12.0002 7.25Z"
+                  fill="black"
+                ></path></svg></a
+            ><a
+              data-v-c5cdf789=""
+              data-v-6bcdeb75=""
+              href="/categories/tvs"
+              class="categories-item"
+              data-v-e8a809c2=""
+              ><div data-v-c5cdf789="" class="categories-item-img">
+                <img
+                  data-v-c5cdf789=""
+                  src="./img/category.png"
+                  alt="Телевизоры"
+                />
+              </div>
+              <h4 data-v-c5cdf789="" class="categories-item-title">
+                Телевизоры
+              </h4>
+              <svg
+                data-v-3a7fb216=""
+                data-v-c5cdf789=""
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                class="categories-item-chevron"
+              >
+                <path
+                  data-v-3a7fb216=""
+                  d="M12.0002 7.25C12.1992 7.24906 12.3903 7.32836 12.5302 7.47L20.5302 15.47C20.8055 15.7655 20.7974 16.226 20.5118 16.5116C20.2262 16.7972 19.7657 16.8054 19.4702 16.53L12.0002 9.06L4.53015 16.53C4.23464 16.8054 3.77414 16.7972 3.48853 16.5116C3.20292 16.226 3.1948 15.7655 3.47015 15.47L11.4702 7.47C11.61 7.32836 11.8011 7.24906 12.0002 7.25Z"
+                  fill="black"
+                ></path></svg></a
+            ><a
+              data-v-c5cdf789=""
+              data-v-6bcdeb75=""
+              href="/categories/headphones"
+              class="categories-item"
+              data-v-e8a809c2=""
+              ><div data-v-c5cdf789="" class="categories-item-img">
+                <img
+                  data-v-c5cdf789=""
+                  src="./img/category.png"
+                  alt="Наушники"
+                />
+              </div>
+              <h4 data-v-c5cdf789="" class="categories-item-title">Наушники</h4>
+              <svg
+                data-v-3a7fb216=""
+                data-v-c5cdf789=""
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                class="categories-item-chevron"
+              >
+                <path
+                  data-v-3a7fb216=""
+                  d="M12.0002 7.25C12.1992 7.24906 12.3903 7.32836 12.5302 7.47L20.5302 15.47C20.8055 15.7655 20.7974 16.226 20.5118 16.5116C20.2262 16.7972 19.7657 16.8054 19.4702 16.53L12.0002 9.06L4.53015 16.53C4.23464 16.8054 3.77414 16.7972 3.48853 16.5116C3.20292 16.226 3.1948 15.7655 3.47015 15.47L11.4702 7.47C11.61 7.32836 11.8011 7.24906 12.0002 7.25Z"
+                  fill="black"
+                ></path></svg></a
+            ><a
+              data-v-c5cdf789=""
+              data-v-6bcdeb75=""
+              href="/categories/gaming-consoles"
+              class="categories-item"
+              data-v-e8a809c2=""
+              ><div data-v-c5cdf789="" class="categories-item-img">
+                <img
+                  data-v-c5cdf789=""
+                  src="./img/category.png"
+                  alt="Игровые консоли"
+                />
+              </div>
+              <h4 data-v-c5cdf789="" class="categories-item-title">
+                Игровые консоли
+              </h4>
+              <svg
+                data-v-3a7fb216=""
+                data-v-c5cdf789=""
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                class="categories-item-chevron"
+              >
+                <path
+                  data-v-3a7fb216=""
+                  d="M12.0002 7.25C12.1992 7.24906 12.3903 7.32836 12.5302 7.47L20.5302 15.47C20.8055 15.7655 20.7974 16.226 20.5118 16.5116C20.2262 16.7972 19.7657 16.8054 19.4702 16.53L12.0002 9.06L4.53015 16.53C4.23464 16.8054 3.77414 16.7972 3.48853 16.5116C3.20292 16.226 3.1948 15.7655 3.47015 15.47L11.4702 7.47C11.61 7.32836 11.8011 7.24906 12.0002 7.25Z"
+                  fill="black"
+                ></path></svg></a
+            ><a
+              data-v-c5cdf789=""
+              data-v-6bcdeb75=""
+              href="/categories/tablets"
+              class="categories-item"
+              data-v-e8a809c2=""
+              ><div data-v-c5cdf789="" class="categories-item-img">
+                <img
+                  data-v-c5cdf789=""
+                  src="./img/category.png"
+                  alt="Планшеты"
+                />
+              </div>
+              <h4 data-v-c5cdf789="" class="categories-item-title">Планшеты</h4>
+              <svg
+                data-v-3a7fb216=""
+                data-v-c5cdf789=""
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                class="categories-item-chevron"
+              >
+                <path
+                  data-v-3a7fb216=""
+                  d="M12.0002 7.25C12.1992 7.24906 12.3903 7.32836 12.5302 7.47L20.5302 15.47C20.8055 15.7655 20.7974 16.226 20.5118 16.5116C20.2262 16.7972 19.7657 16.8054 19.4702 16.53L12.0002 9.06L4.53015 16.53C4.23464 16.8054 3.77414 16.7972 3.48853 16.5116C3.20292 16.226 3.1948 15.7655 3.47015 15.47L11.4702 7.47C11.61 7.32836 11.8011 7.24906 12.0002 7.25Z"
+                  fill="black"
+                ></path></svg></a
+            ><a
+              data-v-c5cdf789=""
+              data-v-6bcdeb75=""
+              href="/categories/smartwatches"
+              class="categories-item"
+              data-v-e8a809c2=""
+              ><div data-v-c5cdf789="" class="categories-item-img">
+                <img
+                  data-v-c5cdf789=""
+                  src="./img/category.png"
+                  alt="Умные часы"
+                />
+              </div>
+              <h4 data-v-c5cdf789="" class="categories-item-title">
+                Умные часы
+              </h4>
+              <svg
+                data-v-3a7fb216=""
+                data-v-c5cdf789=""
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                class="categories-item-chevron"
+              >
+                <path
+                  data-v-3a7fb216=""
+                  d="M12.0002 7.25C12.1992 7.24906 12.3903 7.32836 12.5302 7.47L20.5302 15.47C20.8055 15.7655 20.7974 16.226 20.5118 16.5116C20.2262 16.7972 19.7657 16.8054 19.4702 16.53L12.0002 9.06L4.53015 16.53C4.23464 16.8054 3.77414 16.7972 3.48853 16.5116C3.20292 16.226 3.1948 15.7655 3.47015 15.47L11.4702 7.47C11.61 7.32836 11.8011 7.24906 12.0002 7.25Z"
+                  fill="black"
+                ></path></svg></a
+            ><a
+              data-v-c5cdf789=""
+              data-v-6bcdeb75=""
+              href="/categories/printers"
+              class="categories-item"
+              data-v-e8a809c2=""
+              ><div data-v-c5cdf789="" class="categories-item-img">
+                <img
+                  data-v-c5cdf789=""
+                  src="./img/category.png"
+                  alt="Принтеры"
+                />
+              </div>
+              <h4 data-v-c5cdf789="" class="categories-item-title">Принтеры</h4>
+              <svg
+                data-v-3a7fb216=""
+                data-v-c5cdf789=""
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                class="categories-item-chevron"
+              >
+                <path
+                  data-v-3a7fb216=""
+                  d="M12.0002 7.25C12.1992 7.24906 12.3903 7.32836 12.5302 7.47L20.5302 15.47C20.8055 15.7655 20.7974 16.226 20.5118 16.5116C20.2262 16.7972 19.7657 16.8054 19.4702 16.53L12.0002 9.06L4.53015 16.53C4.23464 16.8054 3.77414 16.7972 3.48853 16.5116C3.20292 16.226 3.1948 15.7655 3.47015 15.47L11.4702 7.47C11.61 7.32836 11.8011 7.24906 12.0002 7.25Z"
+                  fill="black"
+                ></path></svg></a
+            ><a
+              data-v-c5cdf789=""
+              data-v-6bcdeb75=""
+              href="/categories/security-cameras"
+              class="categories-item"
+              data-v-e8a809c2=""
+              ><div data-v-c5cdf789="" class="categories-item-img">
+                <img
+                  data-v-c5cdf789=""
+                  src="./img/category.png"
+                  alt="Камеры видеонаблюдения"
+                />
+              </div>
+              <h4 data-v-c5cdf789="" class="categories-item-title">
+                Камеры видеонаблюдения
+              </h4>
+              <svg
+                data-v-3a7fb216=""
+                data-v-c5cdf789=""
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                class="categories-item-chevron"
+              >
+                <path
+                  data-v-3a7fb216=""
+                  d="M12.0002 7.25C12.1992 7.24906 12.3903 7.32836 12.5302 7.47L20.5302 15.47C20.8055 15.7655 20.7974 16.226 20.5118 16.5116C20.2262 16.7972 19.7657 16.8054 19.4702 16.53L12.0002 9.06L4.53015 16.53C4.23464 16.8054 3.77414 16.7972 3.48853 16.5116C3.20292 16.226 3.1948 15.7655 3.47015 15.47L11.4702 7.47C11.61 7.32836 11.8011 7.24906 12.0002 7.25Z"
+                  fill="black"
+                ></path></svg></a
+            ><a
+              data-v-c5cdf789=""
+              data-v-6bcdeb75=""
+              href="/categories/computer-components"
+              class="categories-item"
+              data-v-e8a809c2=""
+              ><div data-v-c5cdf789="" class="categories-item-img">
+                <img
+                  data-v-c5cdf789=""
+                  src="./img/category.png"
+                  alt="Компьютерные комплектующие"
+                />
+              </div>
+              <h4 data-v-c5cdf789="" class="categories-item-title">
+                Компьютерные комплектующие
+              </h4>
+              <svg
+                data-v-3a7fb216=""
+                data-v-c5cdf789=""
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                class="categories-item-chevron"
+              >
+                <path
+                  data-v-3a7fb216=""
+                  d="M12.0002 7.25C12.1992 7.24906 12.3903 7.32836 12.5302 7.47L20.5302 15.47C20.8055 15.7655 20.7974 16.226 20.5118 16.5116C20.2262 16.7972 19.7657 16.8054 19.4702 16.53L12.0002 9.06L4.53015 16.53C4.23464 16.8054 3.77414 16.7972 3.48853 16.5116C3.20292 16.226 3.1948 15.7655 3.47015 15.47L11.4702 7.47C11.61 7.32836 11.8011 7.24906 12.0002 7.25Z"
+                  fill="black"
+                ></path></svg></a
+            ><a
+              data-v-c5cdf789=""
+              data-v-6bcdeb75=""
+              href="/categories/smartphone-accessories"
+              class="categories-item"
+              data-v-e8a809c2=""
+              ><div data-v-c5cdf789="" class="categories-item-img">
+                <img
+                  data-v-c5cdf789=""
+                  src="./img/category.png"
+                  alt="Аксессуары для смартфонов"
+                />
+              </div>
+              <h4 data-v-c5cdf789="" class="categories-item-title">
+                Аксессуары для смартфонов
+              </h4>
+              <svg
+                data-v-3a7fb216=""
+                data-v-c5cdf789=""
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                class="categories-item-chevron"
+              >
+                <path
+                  data-v-3a7fb216=""
+                  d="M12.0002 7.25C12.1992 7.24906 12.3903 7.32836 12.5302 7.47L20.5302 15.47C20.8055 15.7655 20.7974 16.226 20.5118 16.5116C20.2262 16.7972 19.7657 16.8054 19.4702 16.53L12.0002 9.06L4.53015 16.53C4.23464 16.8054 3.77414 16.7972 3.48853 16.5116C3.20292 16.226 3.1948 15.7655 3.47015 15.47L11.4702 7.47C11.61 7.32836 11.8011 7.24906 12.0002 7.25Z"
+                  fill="black"
+                ></path></svg></a
+            ><a
+              data-v-c5cdf789=""
+              data-v-6bcdeb75=""
+              href="/categories/gaming-accessories"
+              class="categories-item"
+              data-v-e8a809c2=""
+              ><div data-v-c5cdf789="" class="categories-item-img">
+                <img
+                  data-v-c5cdf789=""
+                  src="./img/category.png"
+                  alt="Игровые аксессуары"
+                />
+              </div>
+              <h4 data-v-c5cdf789="" class="categories-item-title">
+                Игровые аксессуары
+              </h4>
+              <svg
+                data-v-3a7fb216=""
+                data-v-c5cdf789=""
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                class="categories-item-chevron"
+              >
+                <path
+                  data-v-3a7fb216=""
+                  d="M12.0002 7.25C12.1992 7.24906 12.3903 7.32836 12.5302 7.47L20.5302 15.47C20.8055 15.7655 20.7974 16.226 20.5118 16.5116C20.2262 16.7972 19.7657 16.8054 19.4702 16.53L12.0002 9.06L4.53015 16.53C4.23464 16.8054 3.77414 16.7972 3.48853 16.5116C3.20292 16.226 3.1948 15.7655 3.47015 15.47L11.4702 7.47C11.61 7.32836 11.8011 7.24906 12.0002 7.25Z"
+                  fill="black"
+                ></path></svg></a
+            ><a
+              data-v-c5cdf789=""
+              data-v-6bcdeb75=""
+              href="/categories/monitors"
+              class="categories-item"
+              data-v-e8a809c2=""
+              ><div data-v-c5cdf789="" class="categories-item-img">
+                <img
+                  data-v-c5cdf789=""
+                  src="./img/category.png"
+                  alt="Мониторы"
+                />
+              </div>
+              <h4 data-v-c5cdf789="" class="categories-item-title">Мониторы</h4>
+              <svg
+                data-v-3a7fb216=""
+                data-v-c5cdf789=""
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                class="categories-item-chevron"
+              >
+                <path
+                  data-v-3a7fb216=""
+                  d="M12.0002 7.25C12.1992 7.24906 12.3903 7.32836 12.5302 7.47L20.5302 15.47C20.8055 15.7655 20.7974 16.226 20.5118 16.5116C20.2262 16.7972 19.7657 16.8054 19.4702 16.53L12.0002 9.06L4.53015 16.53C4.23464 16.8054 3.77414 16.7972 3.48853 16.5116C3.20292 16.226 3.1948 15.7655 3.47015 15.47L11.4702 7.47C11.61 7.32836 11.8011 7.24906 12.0002 7.25Z"
+                  fill="black"
+                ></path></svg></a
+            ><a
+              data-v-c5cdf789=""
+              data-v-6bcdeb75=""
+              href="/categories/ebook-readers"
+              class="categories-item"
+              data-v-e8a809c2=""
+              ><div data-v-c5cdf789="" class="categories-item-img">
+                <img
+                  data-v-c5cdf789=""
+                  src="./img/category.png"
+                  alt="Электронные книги"
+                />
+              </div>
+              <h4 data-v-c5cdf789="" class="categories-item-title">
+                Электронные книги
+              </h4>
+              <svg
+                data-v-3a7fb216=""
+                data-v-c5cdf789=""
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                class="categories-item-chevron"
+              >
+                <path
+                  data-v-3a7fb216=""
+                  d="M12.0002 7.25C12.1992 7.24906 12.3903 7.32836 12.5302 7.47L20.5302 15.47C20.8055 15.7655 20.7974 16.226 20.5118 16.5116C20.2262 16.7972 19.7657 16.8054 19.4702 16.53L12.0002 9.06L4.53015 16.53C4.23464 16.8054 3.77414 16.7972 3.48853 16.5116C3.20292 16.226 3.1948 15.7655 3.47015 15.47L11.4702 7.47C11.61 7.32836 11.8011 7.24906 12.0002 7.25Z"
+                  fill="black"
+                ></path></svg></a
+            ><a
+              data-v-c5cdf789=""
+              data-v-6bcdeb75=""
+              href="/categories/gpus"
+              class="categories-item"
+              data-v-e8a809c2=""
+              ><div data-v-c5cdf789="" class="categories-item-img">
+                <img
+                  data-v-c5cdf789=""
+                  src="./img/category.png"
+                  alt="Видеокарты"
+                />
+              </div>
+              <h4 data-v-c5cdf789="" class="categories-item-title">
+                Видеокарты
+              </h4>
+              <svg
+                data-v-3a7fb216=""
+                data-v-c5cdf789=""
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                class="categories-item-chevron"
+              >
+                <path
+                  data-v-3a7fb216=""
+                  d="M12.0002 7.25C12.1992 7.24906 12.3903 7.32836 12.5302 7.47L20.5302 15.47C20.8055 15.7655 20.7974 16.226 20.5118 16.5116C20.2262 16.7972 19.7657 16.8054 19.4702 16.53L12.0002 9.06L4.53015 16.53C4.23464 16.8054 3.77414 16.7972 3.48853 16.5116C3.20292 16.226 3.1948 15.7655 3.47015 15.47L11.4702 7.47C11.61 7.32836 11.8011 7.24906 12.0002 7.25Z"
+                  fill="black"
+                ></path></svg
+            ></a>
           </div>
+          <HomeBrands title="Бренды" />
+          <SeoText :isActive="false" />
         </div>
-        <section class="cards mt-90">
-          <div class="container">
-            <div class="cards-top">
-              <h2 class="cards-title">Просмотренные товары</h2>
-              <div class="cards-btns">
-                <button class="btn cards-btn cards-btn-prev-third">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                  >
-                    <path
-                      d="M10.9498 19.5201C11.0931 19.6553 11.2828 19.7304 11.4798 19.7301C11.6761 19.7318 11.8643 19.6521 11.9998 19.5101C12.1428 19.3708 12.2234 19.1797 12.2234 18.9801C12.2234 18.7805 12.1428 18.5894 11.9998 18.4501L6.29975 12.75H19.52C19.9342 12.75 20.27 12.4142 20.27 12C20.27 11.5858 19.9342 11.25 19.52 11.25H6.29756L12.0098 5.52006C12.1528 5.38077 12.2334 5.18965 12.2334 4.99006C12.2334 4.79048 12.1528 4.59935 12.0098 4.46006C11.717 4.16761 11.2426 4.16761 10.9498 4.46006L3.94981 11.4601C3.65736 11.7529 3.65736 12.2272 3.94981 12.5201L10.9498 19.5201Z"
-                      fill="white"
-                    />
-                  </svg>
-                </button>
-                <button class="btn cards-btn cards-btn-next-third">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                  >
-                    <path
-                      d="M13.0502 4.47994C12.9069 4.34471 12.7172 4.26955 12.5202 4.26994C12.3239 4.26823 12.1357 4.34787 12.0002 4.48994C11.8572 4.62923 11.7766 4.82035 11.7766 5.01994C11.7766 5.21952 11.8572 5.41065 12.0002 5.54994L17.7003 11.25L4.47998 11.25C4.06577 11.25 3.72998 11.5858 3.72998 12C3.72998 12.4142 4.06577 12.75 4.47998 12.75L17.7024 12.75L11.9902 18.4799C11.8472 18.6192 11.7666 18.8103 11.7666 19.0099C11.7666 19.2095 11.8472 19.4006 11.9902 19.5399C12.283 19.8324 12.7574 19.8324 13.0502 19.5399L20.0502 12.5399C20.3426 12.2471 20.3426 11.7728 20.0502 11.4799L13.0502 4.47994Z"
-                      fill="white"
-                    />
-                  </svg>
-                </button>
-              </div>
-            </div>
-
-            <div class="swiper cards-carousel-third">
-              <div class="swiper-wrapper">
-                <div class="card card-viewed swiper-slide">
-                  <a href="#" class="card-viewed-img">
-                    <img
-                      src="./img/89899ecb202265b5896825d6a5dc8d33.png"
-                      alt="image"
-                    />
-                  </a>
-                  <div class="card-viewed-texts">
-                    <a href="#" class="card-viewed-title">
-                      Apple iPhone 15 Pro 128GB Natural Titanium
-                    </a>
-                    <h5 class="card-viewed-price">714 990 ₸</h5>
-                  </div>
-                  <div class="card-viewed-favorite">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M21 8.50003C21 14.7444 12.0004 20 12.0004 20C12.0004 20 3 14.6667 3 8.51268C3 6.00003 5 4.00003 7.5 4.00003C10 4.00003 12 7.00003 12 7.00003C12 7.00003 14 4.00003 16.5 4.00003C19 4.00003 21 6.00003 21 8.50003Z"
-                        stroke="white"
-                        stroke-width="1.5"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg>
-                  </div>
-                </div>
-                <div class="card card-viewed swiper-slide">
-                  <a href="#" class="card-viewed-img">
-                    <img
-                      src="./img/89899ecb202265b5896825d6a5dc8d33.png"
-                      alt="image"
-                    />
-                  </a>
-                  <div class="card-viewed-texts">
-                    <a href="#" class="card-viewed-title">
-                      Apple iPhone 15 Pro 128GB Natural Titanium
-                    </a>
-                    <h5 class="card-viewed-price">714 990 ₸</h5>
-                  </div>
-                  <div class="card-viewed-favorite">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M21 8.50003C21 14.7444 12.0004 20 12.0004 20C12.0004 20 3 14.6667 3 8.51268C3 6.00003 5 4.00003 7.5 4.00003C10 4.00003 12 7.00003 12 7.00003C12 7.00003 14 4.00003 16.5 4.00003C19 4.00003 21 6.00003 21 8.50003Z"
-                        stroke="white"
-                        stroke-width="1.5"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg>
-                  </div>
-                </div>
-                <div class="card card-viewed swiper-slide">
-                  <a href="#" class="card-viewed-img">
-                    <img
-                      src="./img/89899ecb202265b5896825d6a5dc8d33.png"
-                      alt="image"
-                    />
-                  </a>
-                  <div class="card-viewed-texts">
-                    <a href="#" class="card-viewed-title">
-                      Apple iPhone 15 Pro 128GB Natural Titanium
-                    </a>
-                    <h5 class="card-viewed-price">714 990 ₸</h5>
-                  </div>
-                  <div class="card-viewed-favorite">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M21 8.50003C21 14.7444 12.0004 20 12.0004 20C12.0004 20 3 14.6667 3 8.51268C3 6.00003 5 4.00003 7.5 4.00003C10 4.00003 12 7.00003 12 7.00003C12 7.00003 14 4.00003 16.5 4.00003C19 4.00003 21 6.00003 21 8.50003Z"
-                        stroke="white"
-                        stroke-width="1.5"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg>
-                  </div>
-                </div>
-                <div class="card card-viewed swiper-slide">
-                  <a href="#" class="card-viewed-img">
-                    <img
-                      src="./img/89899ecb202265b5896825d6a5dc8d33.png"
-                      alt="image"
-                    />
-                  </a>
-                  <div class="card-viewed-texts">
-                    <a href="#" class="card-viewed-title">
-                      Apple iPhone 15 Pro 128GB Natural Titanium
-                    </a>
-                    <h5 class="card-viewed-price">714 990 ₸</h5>
-                  </div>
-                  <div class="card-viewed-favorite">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M21 8.50003C21 14.7444 12.0004 20 12.0004 20C12.0004 20 3 14.6667 3 8.51268C3 6.00003 5 4.00003 7.5 4.00003C10 4.00003 12 7.00003 12 7.00003C12 7.00003 14 4.00003 16.5 4.00003C19 4.00003 21 6.00003 21 8.50003Z"
-                        stroke="white"
-                        stroke-width="1.5"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg>
-                  </div>
-                </div>
-                <div class="card card-viewed swiper-slide">
-                  <a href="#" class="card-viewed-img">
-                    <img
-                      src="./img/89899ecb202265b5896825d6a5dc8d33.png"
-                      alt="image"
-                    />
-                  </a>
-                  <div class="card-viewed-texts">
-                    <a href="#" class="card-viewed-title">
-                      Apple iPhone 15 Pro 128GB Natural Titanium
-                    </a>
-                    <h5 class="card-viewed-price">714 990 ₸</h5>
-                  </div>
-                  <div class="card-viewed-favorite">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M21 8.50003C21 14.7444 12.0004 20 12.0004 20C12.0004 20 3 14.6667 3 8.51268C3 6.00003 5 4.00003 7.5 4.00003C10 4.00003 12 7.00003 12 7.00003C12 7.00003 14 4.00003 16.5 4.00003C19 4.00003 21 6.00003 21 8.50003Z"
-                        stroke="white"
-                        stroke-width="1.5"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg>
-                  </div>
-                </div>
-                <div class="card card-viewed swiper-slide">
-                  <a href="#" class="card-viewed-img">
-                    <img
-                      src="./img/89899ecb202265b5896825d6a5dc8d33.png"
-                      alt="image"
-                    />
-                  </a>
-                  <div class="card-viewed-texts">
-                    <a href="#" class="card-viewed-title">
-                      Apple iPhone 15 Pro 128GB Natural Titanium
-                    </a>
-                    <h5 class="card-viewed-price">714 990 ₸</h5>
-                  </div>
-                  <div class="card-viewed-favorite">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M21 8.50003C21 14.7444 12.0004 20 12.0004 20C12.0004 20 3 14.6667 3 8.51268C3 6.00003 5 4.00003 7.5 4.00003C10 4.00003 12 7.00003 12 7.00003C12 7.00003 14 4.00003 16.5 4.00003C19 4.00003 21 6.00003 21 8.50003Z"
-                        stroke="white"
-                        stroke-width="1.5"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="seo mt-90">
-          <div class="container">
-            <div class="cards-top">
-              <h2 data-v-3c4b4b05="" class="cards-title">
-                Интернет магазин Scinla Computers
-              </h2>
-            </div>
-            <div class="seo-wrapper seo-wrapper-secondary">
-              <p class="seo-text">
-                Компания
-                <b >ТОО Scinla Computers</b> официальный
-                партнер ведущих производителей компьютерной техники таких как:
-                <b >
-                  GEIL, INTEL, AOC, Ciber Power, TP-Link, Microsoft, SEAGATE,
-                  LENOVO, HP, PHILIPS, Western Digital, Ubiquiti, D-Link, Ship,
-                  DELL
-                </b>
-              </p>
-              <ul class="seo-list">
-                <li >
-                  У нас представлен полный ассортимент компьютерной техники.
-                </li>
-                <li >
-                  Наши цены одни из самых демократичных на рынке РК.
-                </li>
-                <li >
-                  Широкие логистические возможности, позволяют поставлять
-                  "специфическое" оборудование нашим корпоративным клиентам.
-                </li>
-                <li >
-                  На сегодняшний день нашими клиентами являются крупнейшие
-                  компании Казахстана.
-                </li>
-                <li >Являемся плательщиками НДС.</li>
-                <li >Отгружаем товар во все регионы РК.</li>
-              </ul>
-            </div>
-          </div>
-        </section>
       </section>
     </main>
 

@@ -1,0 +1,435 @@
+.product-characteristic {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+
+    div {
+        color: $dark-grey;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+
+        &:last-child {
+            font-weight: 700;
+            color: $black;
+        }
+    }
+}
+
+.product-tabs {
+    margin-top: 70px;
+}
+
+.product-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    &-id {
+        color: $dark-grey;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        padding-bottom: 11px;
+        border-bottom: 1px solid $grey;
+    }
+
+    &-price,
+    &-count {
+        font-size: 24px;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &-price {
+        .prices {
+            display: flex;
+            gap: 8px;
+            align-items: flex-end;
+
+            .old {
+                font-size: 18px;
+                font-weight: 300;
+                color: $dark-grey;
+                text-decoration: line-through;
+                line-height: 1;
+            }
+
+            .new {
+                font-size: 24px;
+                font-weight: 700;
+                color: $green;
+                line-height: 1;
+            }
+        }
+    }
+
+    &-info {
+        display: flex;
+        gap: 8px;
+        flex-direction: column;
+
+        div {
+            display: flex;
+            gap: 8px;
+            align-items: center;
+            font-size: 14px;
+        }
+    }
+
+    &-btns {
+        display: flex;
+        gap: 8px;
+
+        .favorite {
+            width: 45px;
+            border: 1px solid $green;
+            background-color: unset;
+            border-radius: $radius;
+            flex: 1 0 auto;
+            transition: $transition;
+
+            &:hover {
+                background-color: $green;
+
+                svg {
+                    fill: $red
+                }
+            }
+
+            &.active {
+                background-color: $green;
+
+                svg {
+                    fill: $red;
+
+                    path {
+                        stroke: $red
+                    }
+                }
+            }
+        }
+    }
+
+    &-btn {
+        width: 100%;
+        height: 45px;
+    }
+}
+
+.product-info {
+    .bg {
+        background-color: $white;
+        border-radius: $radius;
+        padding: 16px;
+    }
+
+    &-articul {
+        color: $dark-grey;
+        font-size: 14px;
+        font-weight: 400;
+        margin-bottom: 18px;
+    }
+
+    &-name {
+        color: $black;
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 30px;
+    }
+
+    &-images {
+        position: relative;
+
+        &-labels {
+            position: absolute;
+            top: 16px;
+            left: 16px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        &-label {
+            padding: 4px 16px;
+            border-radius: $radius;
+            color: $white;
+            font-size: 14px;
+            font-weight: 400;
+
+            &.red {
+                background-color: $red;
+            }
+
+            &.green {
+                background-color: $green
+            }
+        }
+
+        &-main {
+            border: 1px solid $grey;
+            border-radius: $radius;
+            width: 100%;
+            padding: 8px;
+
+            img {
+                max-width: 400px;
+                width: 100%;
+                max-height: 400px;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+    }
+
+    &-thumbnails {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    &-thumbnail {
+        max-width: 100px;
+        width: 100%;
+        max-height: 100%;
+        height: 100%;
+        border-radius: $radius;
+        border: 1px solid $grey;
+        cursor: pointer;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &-stars {
+        margin-bottom: 24px;
+        display: flex;
+        gap: 5px;
+
+        img {
+            width: 24px;
+            height: 24px;
+        }
+    }
+
+    &-characteristics {
+        &-title {
+            color: $black;
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 26px;
+        }
+
+        &-descr {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .item {
+                font-size: 16px;
+                font-weight: 400;
+                margin-bottom: 8px;
+
+                &-accent {
+                    font-weight: 700;
+                    font-size: 18px;
+                    color: $green;
+                }
+            }
+        }
+
+        &-all {
+            color: $green;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            margin-top: 44px;
+            cursor: pointer
+        }
+    }
+
+    &-descr {
+        display: block;
+        color: $dark-grey;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 130%;
+        margin-bottom: 0;
+        position: absolute;
+        bottom: 0
+    }
+
+    &-wrapper {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        position: relative;
+    }
+}
+
+@media (max-width: 1400px) {
+    .product-info {
+        &-descr {
+            font-size: 12px;
+            line-height: 120%;
+        }
+    }
+}
+
+@media (max-width: 1199px) {
+    .product-info {
+        .bg {
+            padding: 16px;
+        }
+
+        &-articul {
+            margin-bottom: 16px;
+        }
+
+        &-name {
+            font-size: 16px;
+        }
+
+        &-images {
+
+            &-labels {
+                top: 10px;
+                left: 10px;
+            }
+
+            &-label {
+                padding: 2px 8px;
+                font-size: 12px;
+                font-weight: 300;
+            }
+
+            &-main {
+
+                img {
+                    display: block;
+                    margin: 0 auto;
+                }
+            }
+        }
+
+        &-thumbnails {
+            display: flex;
+            gap: 5px;
+            align-items: center;
+            margin-top: 5px;
+            margin-bottom: 30px;
+        }
+
+        &-thumbnail {
+            max-width: 100px;
+            width: 100%;
+            max-height: 100%;
+            height: 100%;
+            border-radius: $radius;
+            border: 1px solid $grey;
+            cursor: pointer;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        &-stars {
+            margin-bottom: 24px;
+        }
+
+        &-characteristics {
+            &-title {
+                font-size: 18px;
+            }
+
+            &-descr {
+                gap: 8px;
+
+                .item {
+                    font-size: 14px;
+                    margin-bottom: 0;
+
+                    &-accent {
+                        font-size: 16px;
+                    }
+                }
+            }
+
+            &-all {
+                margin-top: 16px;
+            }
+        }
+
+        &-descr {
+            position: unset;
+            margin-top: 30px;
+        }
+    }
+
+    .product-actions {
+        gap: 14px;
+        margin-bottom: 30px;
+
+        &-id {
+            font-size: 12px;
+            padding-bottom: 10px;
+        }
+
+        &-price,
+        &-count {
+            font-size: 18px;
+        }
+
+        &-price {
+            .prices {
+                gap: 5px;
+
+                .old {
+                    font-size: 16px;
+                }
+
+                .new {
+                    font-size: 20px;
+                }
+            }
+        }
+
+        &-info {
+            gap: 4px;
+
+            div {
+                gap: 5px;
+            }
+        }
+
+        &-btns {
+
+            .favorite {
+                width: 45px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 0;
+                transition: $transition;
+            }
+        }
+    }
+
+    .product-characteristic {
+
+        div {
+            font-size: 14px;
+        }
+    }
+}

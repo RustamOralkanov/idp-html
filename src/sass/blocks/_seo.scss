@@ -58,6 +58,16 @@
     .seo {
         margin-top: 0;
 
+        ul {
+            li {
+                font-size: 12px;
+            }
+        }
+
+        p{
+            font-size: 12px;
+        }
+
         &-wrapper {
             padding: 16px;
             gap: 10px;

@@ -1,0 +1,251 @@
+.payment {
+    &-group {
+        margin-top: 40px;
+    }
+
+    &-wrapper {
+        background-color: $white;
+        padding: 16px;
+        border-radius: $radius;
+        margin-bottom: 24px;
+    }
+
+    &-title {
+        font-size: 24px;
+        font-weight: 500;
+        margin-bottom: 16px;
+    }
+
+    &-options {
+        display: flex;
+        background-color: $grey;
+        border-radius: $radius;
+        margin-bottom: 16px;
+
+        .option {
+            flex: 1 0 auto;
+            text-align: center;
+            cursor: pointer;
+            font-size: 16px;
+            line-height: 1;
+            transition: $transition;
+            border-radius: $radius;
+            box-sizing: border-box;
+            height: 38px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &:hover {
+                color: $green;
+                border: 1px solid $green;
+                border-radius: $radius;
+                background-color: $white;
+            }
+
+            &.active {
+                color: $green;
+                border: 1px solid $green;
+                border-radius: $radius;
+                background-color: $white;
+            }
+        }
+    }
+
+    &-input {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+
+        &:not(:last-child) {
+            margin-bottom: 16px;
+        }
+
+        label {
+            font-weight: 500;
+            font-size: 16px;
+
+            span {
+                color: $red;
+            }
+        }
+
+        input,
+        textarea {
+            background-color: $grey;
+            height: 45px;
+            width: 100%;
+            border: unset;
+            border-radius: $radius;
+            padding: 0 8px;
+            font-size: 14px;
+
+            &::placeholder {
+                font-size: 14px;
+            }
+        }
+
+        textarea {
+            height: 100px;
+            padding: 8px;
+        }
+    }
+
+    &-infos {
+        display: flex;
+        gap: 8px;
+        flex-direction: column;
+        margin-bottom: 16px;
+    }
+
+    &-info {
+        display: flex;
+        gap: 5px;
+        align-items: center;
+        font-size: 14px;
+
+        span {
+            font-weight: 600;
+        }
+    }
+
+    &-radio {
+        display: flex;
+        gap: 5px;
+        align-items: center;
+        margin-bottom: 8px;
+        position: relative;
+
+        input {
+            width: 20px;
+            height: 20px;
+            z-index: 2;
+            opacity: 0;
+
+            &:checked+label::before {
+                transition: $transition;
+                background-color: $green;
+            }
+        }
+
+        label {
+            &:after {
+                content: '';
+                display: block;
+                border-radius: 50%;
+                width: 20px;
+                height: 20px;
+                border: 1px solid $green;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                left: 0;
+            }
+
+            &:before {
+                content: '';
+                display: block;
+                border-radius: 50%;
+                width: 14px;
+                height: 14px;
+                position: absolute;
+                background-color: $grey;
+                top: 50%;
+                transform: translateY(-50%);
+                left: 3px;
+            }
+        }
+    }
+
+    &-price {
+        background-color: $grey;
+        border-radius: $radius;
+        padding: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 8px;
+
+        div {
+            font-size: 16px;
+
+            &:last-child {
+                font-size: 18px;
+                font-weight: 700;
+            }
+        }
+    }
+
+    &-total {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 16px 0;
+
+        div {
+            font-size: 16px;
+
+            &:last-child {
+                font-size: 22px;
+                font-weight: 600;
+            }
+        }
+    }
+
+    &-btn {
+        height: 45px;
+    }
+}
+
+@media (max-width:991px) {
+    .payment {
+        &-group {
+            margin-top: 30px;
+        }
+
+        &-title {
+            font-size: 16px;
+        }
+
+        &-options {
+
+            .option {
+                font-size: 14px;
+                height: 38px;
+            }
+        }
+
+        &-radio {
+            gap: 10px;
+            margin-bottom: 10px;
+
+            label {
+                line-height: 1;
+                font-size: 14px;
+            }
+        }
+
+        &-price {
+            padding: 11px 10px;
+
+            div {
+                font-size: 14px;
+
+                &:last-child {
+                    font-size: 16px;
+                }
+            }
+        }
+
+        &-total {
+
+            div {
+                font-size: 16px;
+
+                &:last-child {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}

@@ -34,6 +34,13 @@ $shadow: 0px 9px 10px 0px rgba(0, 0, 0, 0.15);
 @import "blocks/categories";
 @import "blocks/category";
 @import "blocks/pagination";
+@import "blocks/product";
+@import "blocks/tabs";
+@import "blocks/cart";
+@import "blocks/payment-header";
+@import "blocks/payment";
+@import "blocks/success";
+@import "blocks/favorite";
 
 body {
     box-sizing: border-box;
